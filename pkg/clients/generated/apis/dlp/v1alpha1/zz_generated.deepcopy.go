@@ -1336,9 +1336,9 @@ func (in *DiscoveryconfigPubSubNotification) DeepCopyInto(out *DiscoveryconfigPu
 		*out = new(DiscoveryconfigPubsubCondition)
 		(*in).DeepCopyInto(*out)
 	}
-	if in.Topic != nil {
-		in, out := &in.Topic, &out.Topic
-		*out = new(string)
+	if in.TopicRef != nil {
+		in, out := &in.TopicRef, &out.TopicRef
+		*out = new(k8sv1alpha1.ResourceRef)
 		**out = **in
 	}
 	return

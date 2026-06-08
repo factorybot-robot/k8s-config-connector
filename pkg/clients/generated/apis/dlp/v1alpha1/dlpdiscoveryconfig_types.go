@@ -458,9 +458,9 @@ type DiscoveryconfigPubSubNotification struct {
 	// +optional
 	PubsubCondition *DiscoveryconfigPubsubCondition `json:"pubsubCondition,omitempty"`
 
-	/* Cloud Pub/Sub topic to send notifications to. Format is projects/{project}/topics/{topic}. */
+	/* Cloud Pub/Sub topic to send notifications to. */
 	// +optional
-	Topic *string `json:"topic,omitempty"`
+	TopicRef *v1alpha1.ResourceRef `json:"topicRef,omitempty"`
 }
 
 type DiscoveryconfigPublishToChronicle struct {
