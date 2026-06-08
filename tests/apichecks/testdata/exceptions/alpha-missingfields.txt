@@ -1789,7 +1789,7 @@
 [missing_field] crd=dlpdiscoveryconfigs.dlp.cnrm.cloud.google.com version=v1alpha1: field ".spec.actions[].pubSubNotification.pubsubCondition.expressions.conditions[].minimumRiskScore" is not set in unstructured objects
 [missing_field] crd=dlpdiscoveryconfigs.dlp.cnrm.cloud.google.com version=v1alpha1: field ".spec.actions[].pubSubNotification.pubsubCondition.expressions.conditions[].minimumSensitivityScore" is not set in unstructured objects
 [missing_field] crd=dlpdiscoveryconfigs.dlp.cnrm.cloud.google.com version=v1alpha1: field ".spec.actions[].pubSubNotification.pubsubCondition.expressions.logicalOperator" is not set in unstructured objects
-[missing_field] crd=dlpdiscoveryconfigs.dlp.cnrm.cloud.google.com version=v1alpha1: field ".spec.actions[].pubSubNotification.topic" is not set in unstructured objects
+[missing_field] crd=dlpdiscoveryconfigs.dlp.cnrm.cloud.google.com version=v1alpha1: field ".spec.actions[].pubSubNotification.topicRef" is not set; neither 'external' nor 'name' are set
 [missing_field] crd=dlpdiscoveryconfigs.dlp.cnrm.cloud.google.com version=v1alpha1: field ".spec.actions[].publishToChronicle" is not set in unstructured objects
 [missing_field] crd=dlpdiscoveryconfigs.dlp.cnrm.cloud.google.com version=v1alpha1: field ".spec.actions[].publishToDataplexCatalog.lowerDataRiskToLow" is not set in unstructured objects
 [missing_field] crd=dlpdiscoveryconfigs.dlp.cnrm.cloud.google.com version=v1alpha1: field ".spec.actions[].publishToScc" is not set in unstructured objects
