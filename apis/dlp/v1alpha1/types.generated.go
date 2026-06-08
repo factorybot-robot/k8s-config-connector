@@ -305,30 +305,6 @@ type DataProfileAction_Export struct {
 	SampleFindingsTable *BigQueryTable `json:"sampleFindingsTable,omitempty"`
 }
 
-// +kcc:proto=google.privacy.dlp.v2.DataProfileAction.PubSubNotification
-type DataProfileAction_PubSubNotification struct {
-	// Cloud Pub/Sub topic to send notifications to.
-	//  Format is projects/{project}/topics/{topic}.
-	// +kcc:proto:field=google.privacy.dlp.v2.DataProfileAction.PubSubNotification.topic
-	Topic *string `json:"topic,omitempty"`
-
-	// The type of event that triggers a Pub/Sub. At most one
-	//  `PubSubNotification` per EventType is permitted.
-	// +kcc:proto:field=google.privacy.dlp.v2.DataProfileAction.PubSubNotification.event
-	Event *string `json:"event,omitempty"`
-
-	// Conditions (e.g., data risk or sensitivity level) for triggering a
-	//  Pub/Sub.
-	// +kcc:proto:field=google.privacy.dlp.v2.DataProfileAction.PubSubNotification.pubsub_condition
-	PubsubCondition *DataProfilePubSubCondition `json:"pubsubCondition,omitempty"`
-
-	// How much data to include in the Pub/Sub message. If the user wishes to
-	//  limit the size of the message, they can use resource_name and fetch the
-	//  profile fields they wish to. Per table profile (not per column).
-	// +kcc:proto:field=google.privacy.dlp.v2.DataProfileAction.PubSubNotification.detail_of_message
-	DetailOfMessage *string `json:"detailOfMessage,omitempty"`
-}
-
 // +kcc:proto=google.privacy.dlp.v2.DataProfileAction.PublishToChronicle
 type DataProfileAction_PublishToChronicle struct {
 }

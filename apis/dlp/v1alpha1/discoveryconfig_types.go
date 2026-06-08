@@ -15,6 +15,7 @@
 package v1alpha1
 
 import (
+	pubsubv1beta1 "github.com/GoogleCloudPlatform/k8s-config-connector/apis/pubsub/v1beta1"
 	refsv1beta1 "github.com/GoogleCloudPlatform/k8s-config-connector/apis/refs/v1beta1"
 	"github.com/GoogleCloudPlatform/k8s-config-connector/pkg/apis/k8s/v1alpha1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -156,4 +157,27 @@ type DLPDiscoveryConfigList struct {
 
 func init() {
 	SchemeBuilder.Register(&DLPDiscoveryConfig{}, &DLPDiscoveryConfigList{})
+}
+
+// +kcc:proto=google.privacy.dlp.v2.DataProfileAction.PubSubNotification
+type DataProfileAction_PubSubNotification struct {
+	// Cloud Pub/Sub topic to send notifications to.
+	// +kcc:proto:field=google.privacy.dlp.v2.DataProfileAction.PubSubNotification.topic
+	TopicRef *pubsubv1beta1.PubSubTopicRef `json:"topicRef,omitempty"`
+
+	// The type of event that triggers a Pub/Sub. At most one
+	//  `PubSubNotification` per EventType is permitted.
+	// +kcc:proto:field=google.privacy.dlp.v2.DataProfileAction.PubSubNotification.event
+	Event *string `json:"event,omitempty"`
+
+	// Conditions (e.g., data risk or sensitivity level) for triggering a
+	//  Pub/Sub.
+	// +kcc:proto:field=google.privacy.dlp.v2.DataProfileAction.PubSubNotification.pubsub_condition
+	PubsubCondition *DataProfilePubSubCondition `json:"pubsubCondition,omitempty"`
+
+	// How much data to include in the Pub/Sub message. If the user wishes to
+	//  limit the size of the message, they can use resource_name and fetch the
+	//  profile fields they wish to. Per table profile (not per column).
+	// +kcc:proto:field=google.privacy.dlp.v2.DataProfileAction.PubSubNotification.detail_of_message
+	DetailOfMessage *string `json:"detailOfMessage,omitempty"`
 }
