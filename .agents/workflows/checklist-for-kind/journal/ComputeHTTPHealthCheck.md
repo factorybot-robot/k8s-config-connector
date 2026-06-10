@@ -9,13 +9,13 @@ The current step is to ensure that the direct API types are generated and matchi
 
 | Step | Step Name | GitHub Issue | GitHub Pull Request | Status | Date Started | Date Completed |
 |------|-----------|--------------|---------------------|--------|--------------|----------------|
-| 1 | Direct API Types | [#7480](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/7480) | [#7491](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7491) | PR Created (Conflict - Rebase Requested) | 2026-06-10 | - |
-| 2 | Identity & Reference Pattern | - | - | - | - | - |
-| 3 | Round-Trip KRM Fuzzer | - | - | - | - | - |
-| 4 | Direct Controller & E2E Fixtures | - | - | - | - | - |
+| 1 | Direct API Types | [#7480](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/7480) | [#9676](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9676) | PR Created (Rebase Completed - CI Running) | 2026-06-10 | - |
+| 2 | Identity & Reference Pattern | - | - | Pending | - | - |
+| 3 | Round-Trip KRM Fuzzer | - | - | Pending | - | - |
+| 4 | Direct Controller & E2E Fixtures | - | - | Pending | - | - |
 
 ## Notes & Observations
-* **Step 1 Status:** PR #7491 is open and its checks have passed previously. However, it currently has merge conflicts. We have triggered a rebase/conflict resolution by commenting on the PR and assigning `factorybot-robot`.
+* **Step 1 Status:** PR #9676 is open and rebased successfully. CI is running.
 * **Step 2 Status:** Pending merge of Step 1.
 * **Step 3 Status:** Pending completion of Step 2.
 * **Step 4 Status:** Pending completion of Step 3.
