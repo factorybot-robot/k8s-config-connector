@@ -30,6 +30,7 @@
 | apigee.cnrm.cloud.google.com                  | ApigeeSyncAuthorization                         | True         | False       | False  | Terraform  | False       |
 | apihub.cnrm.cloud.google.com                  | APIHubAPI                                       | True         | False       | False  | Direct     | True        |
 | apihub.cnrm.cloud.google.com                  | APIHubDeployment                                | True         | False       | False  | Direct     | True        |
+| apihub.cnrm.cloud.google.com                  | APIHubPlugin                                    | True         | False       | False  | Direct     | True        |
 | apihub.cnrm.cloud.google.com                  | APIHubRuntimeProjectAttachment                  | True         | False       | False  | Direct     | True        |
 | apikeys.cnrm.cloud.google.com                 | APIKeysKey                                      | True         | False       | False  | Terraform  | True        |
 | cloudquota.cnrm.cloud.google.com              | APIQuotaAdjusterSettings                        | True         | True        | False  | Direct     | True        |
@@ -203,6 +204,7 @@
 | compute.cnrm.cloud.google.com                 | ComputeVPNGateway                               | False        | True        | False  | Terraform  | False       |
 | compute.cnrm.cloud.google.com                 | ComputeVPNTunnel                                | False        | True        | False  | Terraform  | False       |
 | configcontroller.cnrm.cloud.google.com        | ConfigControllerInstance                        | False        | True        | False  | DCL        | False       |
+| configdelivery.cnrm.cloud.google.com          | ConfigDeliveryFleetPackage                      | True         | False       | False  | Direct     | True        |
 | configdelivery.cnrm.cloud.google.com          | ConfigDeliveryResourceBundle                    | True         | False       | False  | Direct     | True        |
 | containeranalysis.cnrm.cloud.google.com       | ContainerAnalysisNote                           | False        | True        | False  | DCL        | False       |
 | containeranalysis.cnrm.cloud.google.com       | ContainerAnalysisOccurrence                     | True         | False       | False  | Terraform  | False       |
@@ -211,6 +213,7 @@
 | container.cnrm.cloud.google.com               | ContainerNodePool                               | False        | True        | False  | Terraform  | False       |
 | contentwarehouse.cnrm.cloud.google.com        | ContentWarehouseSchema                          | True         | False       | False  | Direct     | True        |
 | datamigration.cnrm.cloud.google.com           | DatabaseMigrationConversionWorkspace            | True         | False       | False  | Direct     | True        |
+| datamigration.cnrm.cloud.google.com           | DatabaseMigrationMigrationJob                   | True         | False       | False  | Direct     | True        |
 | datacatalog.cnrm.cloud.google.com             | DataCatalogEntry                                | True         | False       | False  | Direct     | True        |
 | datacatalog.cnrm.cloud.google.com             | DataCatalogEntryGroup                           | True         | False       | False  | Direct     | True        |
 | datacatalog.cnrm.cloud.google.com             | DataCatalogPolicyTag                            | False        | True        | False  | Terraform  | True        |
@@ -221,6 +224,7 @@
 | dataflow.cnrm.cloud.google.com                | DataflowJob                                     | False        | True        | False  | Terraform  | True        |
 | dataform.cnrm.cloud.google.com                | DataformRepository                              | True         | True        | False  | Direct     | True        |
 | datafusion.cnrm.cloud.google.com              | DataFusionInstance                              | False        | True        | False  | DCL        | False       |
+| datalabeling.cnrm.cloud.google.com            | DataLabelingAnnotationSpecSet                   | True         | False       | False  | Direct     | True        |
 | datalabeling.cnrm.cloud.google.com            | DataLabelingInstruction                         | True         | False       | False  | Direct     | True        |
 | dataplex.cnrm.cloud.google.com                | DataplexEntryGroup                              | True         | False       | False  | Direct     | True        |
 | dataplex.cnrm.cloud.google.com                | DataplexEntryType                               | True         | False       | False  | Direct     | True        |
@@ -391,6 +395,7 @@
 | networksecurity.cnrm.cloud.google.com         | NetworkSecurityInterceptEndpointGroup           | True         | False       | False  | Direct     | True        |
 | networksecurity.cnrm.cloud.google.com         | NetworkSecurityMirroringDeployment              | True         | False       | False  | Direct     | True        |
 | networksecurity.cnrm.cloud.google.com         | NetworkSecurityMirroringEndpointGroup           | True         | False       | False  | Direct     | True        |
+| networksecurity.cnrm.cloud.google.com         | NetworkSecuritySACRealm                         | True         | False       | False  | Direct     | True        |
 | networksecurity.cnrm.cloud.google.com         | NetworkSecurityServerTLSPolicy                  | False        | True        | False  | DCL        | False       |
 | networkservices.cnrm.cloud.google.com         | NetworkServicesEdgeCacheKeyset                  | True         | False       | False  | Terraform  | False       |
 | networkservices.cnrm.cloud.google.com         | NetworkServicesEdgeCacheOrigin                  | True         | False       | False  | Terraform  | False       |
@@ -407,6 +412,7 @@
 | networkservices.cnrm.cloud.google.com         | NetworkServicesWasmPlugin                       | True         | False       | False  | Direct     | True        |
 | notebooks.cnrm.cloud.google.com               | NotebookInstance                                | True         | True        | False  | Direct     | True        |
 | notebooks.cnrm.cloud.google.com               | NotebooksEnvironment                            | True         | False       | False  | Direct     | True        |
+| notebooks.cnrm.cloud.google.com               | NotebooksExecution                              | True         | False       | False  | Direct     | True        |
 | orgpolicy.cnrm.cloud.google.com               | OrgPolicyCustomConstraint                       | True         | True        | False  | Direct     | True        |
 | orgpolicy.cnrm.cloud.google.com               | OrgPolicyPolicy                                 | True         | True        | False  | Direct     | True        |
 | osconfig.cnrm.cloud.google.com                | OSConfigGuestPolicy                             | False        | True        | False  | DCL        | False       |
