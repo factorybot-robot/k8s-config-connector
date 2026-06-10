@@ -3,13 +3,13 @@
 ## Current Step
 **Step 1: Direct API Types**
 
-The current step is to ensure that the direct API types are generated and matching the CRD. There is an existing open Pull Request #7491 addressing this step, but it currently has merge conflicts and is in a `dirty` state. We have requested `factorybot-robot` to rebase and resolve the conflicts.
+The current step is to ensure that the direct API types are generated and matching the CRD. There is an existing open Pull Request #9676 addressing this step, with a successful rebase and active CI checks currently running.
 
 ## Progress Table
 
 | Step | Step Name | GitHub Issue | GitHub Pull Request | Status | Date Started | Date Completed |
 |------|-----------|--------------|---------------------|--------|--------------|----------------|
-| 1 | Direct API Types | [#7480](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/7480) | [#9676](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9676) | PR Created (Rebase Completed - CI Running) | 2026-06-10 | - |
+| 1 | Direct API Types | [#7480](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/7480) | [#9676](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9676) | PR Created (CI Running) | 2026-06-10 | - |
 | 2 | Identity & Reference Pattern | - | - | Pending | - | - |
 | 3 | Round-Trip KRM Fuzzer | - | - | Pending | - | - |
 | 4 | Direct Controller & E2E Fixtures | - | - | Pending | - | - |
