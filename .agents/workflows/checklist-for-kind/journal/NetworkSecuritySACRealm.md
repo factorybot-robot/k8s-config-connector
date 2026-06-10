@@ -17,5 +17,5 @@ The current step is to implement a round-trip KRM fuzzer for `NetworkSecuritySAC
 ## Notes & Observations
 * **Step 1 Status:** Completed and merged in PR #9054.
 * **Step 2 Status:** Completed and merged in PR #9054.
-* **Step 3 Status:** GitHub Issue #9679 opened, PR #9680 created and undergoing review. Checked on 2026-06-10 22:05 UTC: We confirmed that the 177 presubmit CI checks are currently running (queued/in progress) with no failures detected. The PR is still open and awaiting approval and merge by the KCC owners.
+* **Step 3 Status:** GitHub Issue #9679 opened, PR #9680 created and undergoing review. Checked on 2026-06-10 22:10 UTC: We confirmed that 29 out of 30 presubmit CI check runs have successfully completed, with 1 check (`tests-e2e-fixtures-sql`) currently in progress and no failures detected. The PR remains open, awaiting final approval and merge by the KCC owners.
 * **Step 4 Status:** Pending completion of Step 3.
