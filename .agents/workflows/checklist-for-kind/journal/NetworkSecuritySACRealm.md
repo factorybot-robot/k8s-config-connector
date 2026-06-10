@@ -17,5 +17,5 @@ The current step is to implement a round-trip KRM fuzzer for `NetworkSecuritySAC
 ## Notes & Observations
 * **Step 1 Status:** Completed and merged in PR #9054.
 * **Step 2 Status:** Completed and merged in PR #9054.
-* **Step 3 Status:** GitHub Issue #9679 opened, PR #9680 created and undergoing review.
+* **Step 3 Status:** GitHub Issue #9679 opened, PR #9680 created and undergoing review. Checked on 2026-06-10 21:42 UTC: all active presubmit CI checks are passing successfully, with remaining validations in progress. Awaiting KCC owners' approval and merge.
 * **Step 4 Status:** Pending completion of Step 3.
