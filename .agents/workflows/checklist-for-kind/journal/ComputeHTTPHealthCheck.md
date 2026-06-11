@@ -17,3 +17,4 @@
 - **2026-06-11:** Verified all CI check-runs are green. Posted a friendly ping on PR #9676 for @fedebongio to review and merge the PR so we can proceed to Step 2.
 - **2026-06-11:** Run-through of all 170+ CI check-runs completed. Confirmed 100% of the integration, validation, deepcopy, and sample tests are successfully passing. PR #9676 is completely green and ready for final review.
 - **2026-06-11:** Officially requested review from `@fedebongio` on PR #9676 via the GitHub REST API (bypassing GraphQL tool limitations).
+- **2026-06-11:** Monitored PR #9676. Confirmed it remains open and all 170+ CI checks continue to pass successfully. Awaiting review and merge from the maintainers.
