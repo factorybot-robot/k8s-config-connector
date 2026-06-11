@@ -20,3 +20,4 @@ Step 1: Direct API Types - Open (Issue created, waiting for implementation PR)
 - Initialized the ComputeSSLPolicy migration journal.
 - Opened GitHub Issue #9724 for Step 1 (Direct API Types) and assigned it to `factorybot-robot`.
 - Checked progress; issue #9724 is active and we are waiting for `factorybot-robot` to create the implementation PR.
+- Re-verified status: GitHub Issue #9724 is still open and assigned to `factorybot-robot`. The implementation PR for Step 1 has not yet been submitted. We are continuing to monitor progress on the active sandbox work.
