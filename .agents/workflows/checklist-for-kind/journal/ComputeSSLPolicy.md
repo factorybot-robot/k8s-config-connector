@@ -3,13 +3,13 @@
 This journal tracks the migration of `ComputeSSLPolicy` to a direct controller at `v1beta1`.
 
 ## Current Step
-Step 1: Direct API Types - Open (Issue created, waiting for implementation PR)
+Step 1: Direct API Types - PR Created (Failing CI, Changes Requested)
 
 ## Migration Progress
 
 | Step | Name | GitHub Issue | GitHub Pull Request | Status | Date Started | Date Completed |
 |------|------|--------------|---------------------|--------|--------------|----------------|
-| 1 | Direct API Types | [#9724](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9724) | - | Open | 2026-06-11 | - |
+| 1 | Direct API Types | [#9724](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9724) | [#9725](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9725) | PR Created | 2026-06-11 | - |
 | 2 | Identity and Reference Types Pattern | - | - | Pending | - | - |
 | 3 | Create a Round-Trip KRM Fuzzer | - | - | Pending | - | - |
 | 4 | Implement Direct Controller & E2E Fixtures | - | - | Pending | - | - |
@@ -21,3 +21,6 @@ Step 1: Direct API Types - Open (Issue created, waiting for implementation PR)
 - Opened GitHub Issue #9724 for Step 1 (Direct API Types) and assigned it to `factorybot-robot`.
 - Checked progress; issue #9724 is active and we are waiting for `factorybot-robot` to create the implementation PR.
 - Re-verified status: GitHub Issue #9724 is still open and assigned to `factorybot-robot`. The implementation PR for Step 1 has not yet been submitted. We are continuing to monitor progress on the active sandbox work.
+- Detected that `factorybot-robot` submitted PR #9725. However, the `validate-generated-files` check failed.
+- Diagnosed the failure locally and found that the resource reference documentation (`scripts/generate-google3-docs/resource-reference/generated/resource-docs/compute/computesslpolicy.md`) was out of date.
+- Commented on PR #9725 requesting `factorybot-robot` to run `make resource-docs` to regenerate the documentation and update the PR, then reassigned the PR back to them.
