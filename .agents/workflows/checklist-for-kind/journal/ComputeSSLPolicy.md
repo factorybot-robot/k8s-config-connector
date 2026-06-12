@@ -9,7 +9,7 @@ Step 1: Direct API Types - Approved & Queued for Merge
 
 | Step | Name | GitHub Issue | GitHub Pull Request | Status | Date Started | Date Completed |
 |------|------|--------------|---------------------|--------|--------------|----------------|
-| 1 | Direct API Types | [#9724](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9724) | [#9725](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9725) | Queued for Merge | 2026-06-11 | - |
+| 1 | Direct API Types | [#9724](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9724) | [#9725](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9725) | Rebase Required | 2026-06-11 | - |
 | 2 | Identity and Reference Types Pattern | - | - | Pending | - | - |
 | 3 | Create a Round-Trip KRM Fuzzer | - | - | Pending | - | - |
 | 4 | Implement Direct Controller & E2E Fixtures | - | - | Pending | - | - |
@@ -17,6 +17,9 @@ Step 1: Direct API Types - Approved & Queued for Merge
 ## Status Update Notes
 
 ### 2026-06-12
+- Monitored merge queue progress and identified that both merge queue workflow runs `27392322062` and `27391517383` failed due to an unrelated, flaky infrastructure test timeout in `fields/management/gkehub/featuremembership/set_unset`.
+- Consequently, PR #9725 was kicked out of the merge queue. Although auto-merge was re-enabled by `barney-s`, the PR remains behind the newly merged upstream `master` commit `1cdcf7237e` (#9312) and is not re-queueing automatically.
+- Commented on PR #9725 requesting `factorybot-robot` to rebase the branch on latest upstream `master` to resolve the stale state, trigger fresh green checks, and re-enqueue the PR into the merge queue. Reassigned the PR back to `factorybot-robot`.
 - Re-verified the merge queue workflow runs `27392322062` and `27391517383` on June 12, 2026. Verified that all completed check-runs (such as `test-mockgcp`, `unit-tests`, `validate-generated-files`) have passed with 100% success (0 failures), and the remaining fixtures/fuzzing tests are progressing cleanly in the queue.
 - Since PR #9725 is not yet merged, we continue to wait for the merge queue to complete and merge the PR into upstream `master` before starting Step 2 (Identity and Reference Types Pattern).
 - Monitored the merge queue and check-runs for PR #9725. Verified that the PR is actively being validated inside the GitHub Actions native merge queue on merge commits `4caf565444` (workflow run `27391517383`) and `1cdcf7237e` (workflow run `27392322062`). All active workflows (including `Presubmit` and `ci-presubmit`) are running and progressing cleanly with 0 failures.
