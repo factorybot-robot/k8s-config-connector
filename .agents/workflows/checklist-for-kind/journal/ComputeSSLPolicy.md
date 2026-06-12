@@ -3,13 +3,13 @@
 This journal tracks the migration of `ComputeSSLPolicy` to a direct controller at `v1beta1`.
 
 ## Current Step
-Step 1: Direct API Types - PR Ready (All CI Passed, Awaiting Approval)
+Step 1: Direct API Types - Approved & Queued for Merge
 
 ## Migration Progress
 
 | Step | Name | GitHub Issue | GitHub Pull Request | Status | Date Started | Date Completed |
 |------|------|--------------|---------------------|--------|--------------|----------------|
-| 1 | Direct API Types | [#9724](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9724) | [#9725](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9725) | Awaiting Approval | 2026-06-11 | - |
+| 1 | Direct API Types | [#9724](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9724) | [#9725](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9725) | Queued for Merge | 2026-06-11 | - |
 | 2 | Identity and Reference Types Pattern | - | - | Pending | - | - |
 | 3 | Create a Round-Trip KRM Fuzzer | - | - | Pending | - | - |
 | 4 | Implement Direct Controller & E2E Fixtures | - | - | Pending | - | - |
@@ -17,9 +17,9 @@ Step 1: Direct API Types - PR Ready (All CI Passed, Awaiting Approval)
 ## Status Update Notes
 
 ### 2026-06-12
-- Monitored PR #9725 checks. Verified that `factorybot-robot` ran `make resource-docs` and committed/pushed the updated documentation in commit `1dc8ae1ef475ae80798dab61b6443910ef4e23d0`.
-- All 21 core CI check-runs (including `validate-generated-files`, `golangci-lint`, `unit-tests`, `fuzz-roundtrippers`, and `test-mockgcp`) completed and passed successfully!
-- The PR is now in a fully green state and is currently awaiting final OWNERS / Prow approval before merging.
+- Monitored PR #9725 checks. The PR has been approved with `/lgtm` and `/approve` by the owners/approvers (maqiuyujoyce and barney-s). All 21 core CI check-runs have passed successfully.
+- The PR is now queued to merge by the Prow/Tide bot. We are waiting for the merge to complete before proceeding to Step 2 (Identity and Reference Types Pattern).
+- Verified that `factorybot-robot` ran `make resource-docs` and committed/pushed the updated documentation in commit `1dc8ae1ef475ae80798dab61b6443910ef4e23d0`. All core CI checks are in a fully green state.
 
 ### 2026-06-11
 - Initialized the ComputeSSLPolicy migration journal.
