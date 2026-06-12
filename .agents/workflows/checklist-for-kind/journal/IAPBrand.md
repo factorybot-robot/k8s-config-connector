@@ -16,3 +16,4 @@
 ### 2026-06-12
 - Created Step 1 GitHub issue [#9739](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9739) for factorybot-robot to implement direct KRM types and `generate.sh` for IAPBrand.
 - Checked progress of Step 1: issue #9739 is currently being worked on by `factorybot-robot` in a sandbox; awaiting pull request creation.
+- Re-verified status: `factorybot-robot` has commented in issue #9739 that it started fixing the issue in a sandbox; awaiting pull request creation.
