@@ -3,13 +3,13 @@
 This journal tracks the migration of `ComputeSSLPolicy` to a direct controller at `v1beta1`.
 
 ## Current Step
-Step 1: Direct API Types - In Progress (CI Verification)
+Step 1: Direct API Types - In Progress (Approval / Merge Pending)
 
 ## Migration Progress
 
 | Step | Name | GitHub Issue | GitHub Pull Request | Status | Date Started | Date Completed |
 |------|------|--------------|---------------------|--------|--------------|----------------|
-| 1 | Direct API Types | [#9724](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9724) | [#9725](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9725) | In Progress (CI Verification) | 2026-06-11 | - |
+| 1 | Direct API Types | [#9724](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9724) | [#9725](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9725) | In Progress (Approval / Merge Pending) | 2026-06-11 | - |
 | 2 | Identity and Reference Types Pattern | - | - | Pending | - | - |
 | 3 | Create a Round-Trip KRM Fuzzer | - | - | Pending | - | - |
 | 4 | Implement Direct Controller & E2E Fixtures | - | - | Pending | - | - |
@@ -17,6 +17,7 @@ Step 1: Direct API Types - In Progress (CI Verification)
 ## Status Update Notes
 
 ### 2026-06-12
+- Checked the status of PR #9725 on Friday, June 12, 2026. All 150+ presubmit CI checks have successfully completed with 100% success (0 failures) on the rebased branch. Commented on the PR notifying owners `@barney-s` and `@maqiuyujoyce` that checks are green, requesting a re-LGTM/re-approval to trigger the merge. We continue to monitor the PR and wait for it to be merged.
 - Checked the status of PR #9725 on Friday, June 12, 2026. Verified that all 130+ presubmit CI check-runs associated with the head commit `9ca668f31b` have completed successfully with 100% success (0 failures). The PR is currently open and fully mergeable with no git conflicts, but remains in a blocked status (`mergeStateStatus: BLOCKED`) under the `REVIEW_REQUIRED` state because previous reviews/approvals were dismissed by GitHub following the rebase. We continue to wait for owners `barney-s` and `maqiuyujoyce` to approve and merge PR #9725 before proceeding to Step 2 (Identity and Reference Types Pattern).
 - Checked the status of PR #9725 on Friday, June 12, 2026. Verified that the rebase on the latest upstream master has been successfully completed by `factorybot-robot` (head commit `9ca668f31b`). All completed presubmit CI check-runs—including `tests-preview`, `test-mockgcp`, `unit-tests`, and all linters—are fully green and passing with 0 failures. A few integration test shards are currently running and progressing cleanly. We continue to wait for CI checks to complete and for the PR to be merged before starting Step 2.
 - Checked the status of PR #9725 on Friday, June 12, 2026. Observed a transient failure in the `tests-preview` check due to a network/environment timeout during envtest setup. To resolve this and trigger a clean CI run, we successfully closed and reopened the pull request. Brand new presubmit workflow runs (such as run 27440526490) have successfully been kicked off. We will continue to monitor the runs to ensure all checks pass completely.
