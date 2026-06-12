@@ -21,3 +21,4 @@
 - Confirmed that issue #9739 remains open with no Pull Request created yet. `factorybot-robot` is still working on implementing the direct KRM types and `generate.sh` in the sandbox.
 - Monitored Step 1: Issue #9739 remains open and no pull request has been submitted by `factorybot-robot` yet.
 - Checked progress of Step 1: Confirmed that GitHub issue #9739 remains open with no Pull Request submitted yet. `factorybot-robot` is still working on implementing the direct KRM types and `generate.sh` in its sandbox.
+- Periodic check on Step 1: Verified that issue #9739 is still open and active. `factorybot-robot` continues working on the direct KRM types in the sandbox; no pull request has been opened yet.
