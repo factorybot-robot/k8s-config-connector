@@ -17,6 +17,8 @@ Step 1: Direct API Types - Approved & Queued for Merge
 ## Status Update Notes
 
 ### 2026-06-12
+- Re-verified the merge queue workflow runs `27392322062` and `27391517383` on June 12, 2026. Verified that all completed check-runs (such as `test-mockgcp`, `unit-tests`, `validate-generated-files`) have passed with 100% success (0 failures), and the remaining fixtures/fuzzing tests are progressing cleanly in the queue.
+- Since PR #9725 is not yet merged, we continue to wait for the merge queue to complete and merge the PR into upstream `master` before starting Step 2 (Identity and Reference Types Pattern).
 - Monitored the merge queue and check-runs for PR #9725. Verified that the PR is actively being validated inside the GitHub Actions native merge queue on merge commits `4caf565444` (workflow run `27391517383`) and `1cdcf7237e` (workflow run `27392322062`). All active workflows (including `Presubmit` and `ci-presubmit`) are running and progressing cleanly with 0 failures.
 - Checked the PR merge status on GitHub. PR #9725 remains in `open` state, fully approved with `/lgtm` and `/approve` from maintainers, and its own presubmits are completely green.
 - We continue to wait for the GitHub Actions native merge queue to successfully complete and merge PR #9725 into upstream `master` before starting Step 2 (Identity and Reference Types Pattern).
