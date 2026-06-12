@@ -15,3 +15,4 @@ Step 1: Direct API Types
 - **2026-06-12**: Initialized migration journal for `ComputeAddress`. Opened Step 1 issue #9730 for direct API types and assigned to `factorybot-robot`.
 - **2026-06-12**: Monitored Step 1 progress. Confirmed that the AI Factory sandbox run is active, and we are awaiting the creation of the Step 1 Pull Request.
 - **2026-06-12**: Pull Request [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732) has been created by `factorybot-robot` for Step 1. Currently monitoring the CI checks, which are pending.
+- **2026-06-12**: Verified that PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732) is open and CI checks are currently queued/in-progress. No failures or blocker comments found; awaiting merge of Step 1.
