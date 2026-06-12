@@ -17,6 +17,7 @@ Step 1: Direct API Types - Rebase Required
 ## Status Update Notes
 
 ### 2026-06-12
+- Checked the status of PR #9725 on Friday, June 12, 2026. Verified that the PR is open, approved, and currently 'BLOCKED' in its merge status because it requires a rebase to upstream master (latest commit `1cdcf7237e`). We confirmed that `factorybot-robot` is still assigned, and we continue to wait for the requested rebase to complete before transitioning to Step 2.
 - Checked the status of PR #9725 on Friday, June 12, 2026. The PR remains approved and in an 'OPEN' state but is still 'BLOCKED' from merging as `factorybot-robot` has not yet completed the requested rebase. We will continue to monitor the PR and wait for the rebase to finish before starting Step 2.
 - Re-verified PR #9725 and parent issue #9723 on June 12, 2026. The PR is still in 'BLOCKED' status as `factorybot-robot` has not completed the rebase yet. We continue to monitor the progress and wait for the rebase to complete before proceeding to Step 2.
 - Monitored PR #9725 and the parent issue #9723 on June 12, 2026. The PR remains approved but blocked from merging since it has not yet been rebased on the latest upstream master (which has progressed to commit `1cdcf7237e`). We confirmed that the worker agent `factorybot-robot` is currently occupied with other tasks, and we continue to wait for the requested rebase to be completed before we can proceed to Step 2.
