@@ -1,6 +1,6 @@
 # Migration Progress: ComputeSecurityPolicy
 
-Current Step: Step 3 - Create a Round-Trip KRM Fuzzer (Approved & Queued to Merge)
+Current Step: Step 4 - Implement Direct Controller & E2E Fixtures (Issue Created)
 
 ## Progress Tracking
 
@@ -8,10 +8,12 @@ Current Step: Step 3 - Create a Round-Trip KRM Fuzzer (Approved & Queued to Merg
 | --- | --- | --- | --- | --- | --- |
 | 1. Direct API Types | [#6300](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/6300) | [#6312](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6312) | Completed | Jan 27, 2026 | Jan 28, 2026 |
 | 2. Identity and Reference Types Pattern | [#8814](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/8814) | [#8824](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/8824) | Completed | May 28, 2026 | May 29, 2026 |
-| 3. Create a Round-Trip KRM Fuzzer | [#9733](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9733) | [#9736](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9736) | Queued to Merge | Jun 12, 2026 | - |
-| 4. Implement Direct Controller & E2E Fixtures | - | - | Pending | - | - |
+| 3. Create a Round-Trip KRM Fuzzer | [#9733](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9733) | [#9736](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9736) | Completed | Jun 12, 2026 | Jun 12, 2026 |
+| 4. Implement Direct Controller & E2E Fixtures | [#9785](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9785) | - | Open | Jun 12, 2026 | - |
 
 ## Status Updates
+- **Jun 12, 2026:** Created GitHub Issue #9785 for Step 4 (Implement Direct Controller & E2E Fixtures) and assigned it to `factorybot-robot`.
+- **Jun 12, 2026:** Confirmed PR #9736 has been successfully merged. Completed Step 3 and transitioning to Step 4.
 - **Jun 12, 2026:** Monitored PR #9736. Verified that PR is fully approved by `barney-s` (`/lgtm` and `/approve`) and is currently queued in Prow/Tide for merging to master. All CI checks are green. Waiting for the merge to complete before initiating Step 4.
 - **Jun 12, 2026:** Monitored PR #9736. Confirmed all 170+ CI check-runs are successfully completed and passing, with no merge conflicts. The PR remains blocked only by human approval. Waiting for merge to master before initiating Step 4.
 - **Jun 12, 2026:** Monitored PR #9736. Confirmed all CI check-runs are fully passing and there are no requested changes. Awaiting reviewer approval and merge.
