@@ -27,3 +27,6 @@ Step 1: Direct API Types - PR Created (Failing CI, Changes Requested)
 - Monitored PR #9725 progress. Discovered that the latest commit `6e3e981253f4da13160740644c820b63f7b9cb35` is failing all CI check-runs due to a compilation error.
 - Diagnosed the failure locally by checking out the PR branch. Found that `6e3e981253` incorrectly added `DeepCopy` methods back to `apis/networkconnectivity/v1alpha1/zz_generated.deepcopy.go` for commented-out/unreachable types (`AllocationOptions`, `Any`, and `AutoCreatedSubnetworkInfo`), causing `undefined: AllocationOptions` and other compilation errors.
 - Commented on PR #9725 requesting `factorybot-robot` to discard these changes or regenerate cleanly and re-assigned it back to them.
+- Detected that `factorybot-robot` pushed a new commit `eb2e4b4a24` which successfully pruned the undefined deepcopy methods and fixed the compilation failures (unit-tests passed).
+- However, the `validate-generated-files` check continues to fail for PR #9725 because they did not commit/stage the regenerated documentation `scripts/generate-google3-docs/resource-reference/generated/resource-docs/compute/computesslpolicy.md` after updating the schema.
+- Commented on PR #9725 requesting them to run `make resource-docs` locally, commit/push the changes to `computesslpolicy.md`, and re-assigned to `factorybot-robot`.
