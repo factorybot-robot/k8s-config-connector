@@ -13,3 +13,4 @@ Step 1: Direct API Types
 
 ## Status Updates
 - **2026-06-12**: Initialized migration journal for `ComputeAddress`. Opened Step 1 issue #9730 for direct API types and assigned to `factorybot-robot`.
+- **2026-06-12**: Monitored Step 1 progress. Confirmed that the AI Factory sandbox run is active, and we are awaiting the creation of the Step 1 Pull Request.
