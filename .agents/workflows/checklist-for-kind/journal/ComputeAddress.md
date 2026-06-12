@@ -12,6 +12,7 @@ Step 1: Direct API Types
 | Step 4: Implement Direct Controller & E2E Fixtures | - | - | - | - | - |
 
 ## Status Updates
+- **2026-06-12**: Monitored PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Confirmed that the `tests-preview` check-run is still failing due to a transient network flake (CURLE_HTTP2_STREAM_ERROR). All other active checks are currently running or pending, and we are awaiting a minor push or rerun from the developer bot (`factorybot-robot`) to re-trigger the failed check.
 - **2026-06-12**: Monitored Step 1 PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Detected that the `tests-preview` check-run failed due to a transient network flake (CURLE_HTTP2_STREAM_ERROR). Posted a comment requesting a minor push/rerun of the failed job and reassigned the PR to `factorybot-robot`.
 - **2026-06-12**: Monitored Step 1 PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Detected that the PR has merge conflicts with master (mergeable_state is 'dirty'). Posted a comment requesting a rebase on master and reassigned the PR to `factorybot-robot`.
 - **2026-06-12**: Re-verified pull request [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). All 110+ CI checks are 100% green and passing. Attempted to merge the PR, but it requires merge queue permissions and awaits final maintainer review and approval. Step 2 remains pending until Step 1 is merged.
