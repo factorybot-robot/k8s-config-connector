@@ -19,3 +19,4 @@
 - Re-verified status: `factorybot-robot` has commented in issue #9739 that it started fixing the issue in a sandbox; awaiting pull request creation.
 - Re-checked progress of Step 1: `factorybot-robot` is continuing to work on implementing the direct KRM types and `generate.sh` for IAPBrand in its sandbox; no Pull Request has been created yet.
 - Confirmed that issue #9739 remains open with no Pull Request created yet. `factorybot-robot` is still working on implementing the direct KRM types and `generate.sh` in the sandbox.
+- Monitored Step 1: Issue #9739 remains open and no pull request has been submitted by `factorybot-robot` yet.
