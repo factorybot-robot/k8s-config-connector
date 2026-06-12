@@ -17,6 +17,7 @@ Step 1: Direct API Types - Approved & Queued for Merge
 ## Status Update Notes
 
 ### 2026-06-12
+- Checked the GitHub merge queue status. Verified that PR #9725 is actively being validated inside the GitHub Actions native merge queue (workflow run `27388212871`) on the merge commit `4caf565444e183731a7ba752862d7e79c17c54d8`. Almost all core test suites have successfully completed with 0 failures, and only `tests-e2e-fixtures-bigquery` and `tests-e2e-fixtures-sql` are currently in-progress. We continue to wait for the merge queue to successfully complete and merge PR #9725 into upstream `master` before starting Step 2 (Identity and Reference Types Pattern).
 - Monitored the merge queue and check-runs for PR #9725 again. Verified that the head commit `e9ab8142fe` has all check-runs successfully completed/skipped, with no failing checks on the branch itself.
 - Verified that the merge queue branch commit `1cdcf7237e` for PR #9725 is progressing with 0 failures across all completed check-runs (including E2E, unit tests, and validations), while some remaining tasks are still queued.
 - Confirmed that the preceding PR #9720 in the merge queue (commit `4caf565444`) is also progressing cleanly with no failures.
