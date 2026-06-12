@@ -12,6 +12,7 @@ Step 1: Direct API Types
 | Step 4: Implement Direct Controller & E2E Fixtures | - | - | - | - | - |
 
 ## Status Updates
+- **2026-06-12**: Re-verified that PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732) is still open and all 110+ CI checks are fully green. Awaiting maintainer review and merge before initiating Step 2 (Identity and Reference Types Pattern).
 - **2026-06-12**: Re-verified PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732) CI checks. Confirmed that all checks, including `tests-e2e-fixtures-bigquery`, have now fully passed with zero failures. The PR is 100% green and is currently awaiting maintainer review and merge.
 - **2026-06-12**: Re-verified PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732) and confirmed all 110+ CI checks are 100% green with zero failures. The PR remains open and is awaiting maintainer review and merge.
 - **2026-06-12**: Confirmed that all CI checks (including all e2e fixtures/samples and linter runs) on PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732) have passed successfully with zero failures. The PR is fully green and awaiting maintainer review/merge.
