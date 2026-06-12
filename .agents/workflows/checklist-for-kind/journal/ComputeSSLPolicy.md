@@ -20,6 +20,7 @@ Step 1: Direct API Types - Approved & Queued for Merge
 - Monitored PR #9725 checks. The PR has been approved with `/lgtm` and `/approve` by the owners/approvers (maqiuyujoyce and barney-s). All 21 core CI check-runs have passed successfully.
 - The PR is now queued to merge by the Prow/Tide bot. We are waiting for the merge to complete before proceeding to Step 2 (Identity and Reference Types Pattern).
 - Verified that `factorybot-robot` ran `make resource-docs` and committed/pushed the updated documentation in commit `1dc8ae1ef475ae80798dab61b6443910ef4e23d0`. All core CI checks are in a fully green state.
+- Re-verified that the PR remains healthy and is actively in the merge queue (behind PR #9720) with no blocks, and we are continuing to monitor it until it merges.
 
 ### 2026-06-11
 - Initialized the ComputeSSLPolicy migration journal.
