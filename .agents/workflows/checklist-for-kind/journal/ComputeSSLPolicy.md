@@ -17,6 +17,10 @@ Step 1: Direct API Types - Approved & Queued for Merge
 ## Status Update Notes
 
 ### 2026-06-12
+- Monitored the merge queue and check-runs for PR #9725 again. Verified that the head commit `e9ab8142fe` has all check-runs successfully completed/skipped, with no failing checks on the branch itself.
+- Verified that the merge queue branch commit `1cdcf7237e` for PR #9725 is progressing with 0 failures across all completed check-runs (including E2E, unit tests, and validations), while some remaining tasks are still queued.
+- Confirmed that the preceding PR #9720 in the merge queue (commit `4caf565444`) is also progressing cleanly with no failures.
+- PR #9725 is in a fully green, approved, and healthy state within the native merge queue. We continue to wait for the merge queue to complete the merge of PR #9725 into upstream `master` before we can start Step 2 (Identity and Reference Types Pattern).
 - Monitored PR #9725 checks. The PR has been approved with `/lgtm` and `/approve` by the owners/approvers (maqiuyujoyce and barney-s). All 21 core CI check-runs have passed successfully.
 - The PR is now queued to merge by the Prow/Tide bot. We are waiting for the merge to complete before proceeding to Step 2 (Identity and Reference Types Pattern).
 - Verified that `factorybot-robot` ran `make resource-docs` and committed/pushed the updated documentation in commit `1dc8ae1ef475ae80798dab61b6443910ef4e23d0`. All core CI checks are in a fully green state.
