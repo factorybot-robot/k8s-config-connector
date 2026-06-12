@@ -1,10 +1,10 @@
 # Migration Journal: ComputeHTTPHealthCheck
 
-**Current Step:** `Step 1: Direct API Types` (PR Created, Blocked on Rebase)
+**Current Step:** `Step 1: Direct API Types` (PR Created, CI Passing)
 
 | Step | Step Name | GitHub Issue | GitHub Pull Request | Status | Date Started | Date Completed |
 |---|---|---|---|---|---|---|
-| 1 | Direct API Types | [#7480](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/7480) | [#9676](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9676) | Blocked | 2026-06-10 | - |
+| 1 | Direct API Types | [#7480](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/7480) | [#9676](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9676) | PR Created | 2026-06-10 | - |
 | 2 | Identity & Reference Pattern | - | - | Pending | - | - |
 | 3 | Round-Trip KRM Fuzzer | - | - | Pending | - | - |
 | 4 | Direct Controller & E2E Fixtures | - | - | Pending | - | - |
@@ -88,3 +88,4 @@
 - **2026-06-12 (Checklist Execution):** Re-verified and monitored PR #9676. All 176 CI check-runs are 100% green and successfully passing. The PR is conflict-free and awaiting maintainer review/merge to proceed to Step 2 (Identity & Reference Pattern).
 - **2026-06-12 (Orchestration & Verification):** Re-checked the status of PR #9676. Verified that the PR is open and 100% green, but detected that the `crd-equivalence-check` status check has failed because other CRD changes were merged to `master` (e.g. `dnsrecordsets` and `redisclusters`). Posted a comment on PR #9676 alerting `factorybot-robot` of the failure, requesting a rebase on `master`, and reassigning the PR back to `factorybot-robot`.
 - **2026-06-12 (Orchestration Run):** Confirmed that `factorybot-robot` has successfully received the rebase request and has initiated the investigation/rebase process on PR #9676. Standing by and monitoring the progress of the rebase and subsequent CI checks for Step 1.
+- **2026-06-12 (CI Status Recovered):** Re-verified PR #9676. Confirmed that the rebase on `master` has completed successfully. Modified `apis/compute/v1beta1/httphealthcheck_types.go` to mark `Spec` as `+optional` to maintain schema equivalence with the legacy CRD, which successfully resolved the `crd-equivalence-check` failure. All key CI checks are now 100% green and passing again. Standing by for maintainer review and merge before proceeding to Step 2.
