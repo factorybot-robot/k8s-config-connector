@@ -7,11 +7,12 @@ Step 2: Identity and Reference Types Pattern
 | Step Number and Name | GitHub Issue | GitHub Pull Request | Status | Date Started | Date Completed |
 | --- | --- | --- | --- | --- | --- |
 | 1. Direct API Types | [#9735](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9735) | [#9741](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9741) | Merged | 2026-06-12 | 2026-06-12 |
-| 2. Identity and Reference Types Pattern | [#9745](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9745) | [#9745](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9790) | PR Created | 2026-06-12 | |
+| 2. Identity and Reference Types Pattern | [#9745](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9745) | [#9790](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9790) | PR Created (Failing CI) | 2026-06-12 | |
 | 3. Create a Round-Trip KRM Fuzzer | | | Pending | | |
 | 4. Implement Direct Controller & E2E Fixtures | | | Pending | | |
 
 ## Recent Status Updates
+* **2026-06-12**: Monitored Step 2 (Identity and Reference Types Pattern) PR #9790. Identified unit-tests and validate-generated-files check failures due to a compile-time redeclaration of `ComputeInstanceGVK` in both `instance_types.go` and `instance_reference.go`. Assigned the PR back to `factorybot-robot` to resolve the conflict and regenerate documentation.
 * **2026-06-12**: Monitored Step 2 (Identity and Reference Types Pattern). Verified that PR #9790 has been successfully created. An initial documentation mismatch in the `validate-generated-files` check was identified (due to zone-based vs location-based format change on referencing resources), but `factorybot-robot` successfully diagnosed, regenerated the required documentation files, and force-pushed a fix. A new CI build is currently running.
 * **2026-06-12**: Monitored Step 2 (Identity and Reference Types Pattern). Verified Step 2 Issue #9745 remains open and in progress by the sandbox (no PR submitted yet). We will continue to monitor the sandbox execution.
 * **2026-06-12**: Monitored Step 2 (Identity and Reference Types Pattern). Confirmed Step 1 PR #9741 has successfully merged. Step 2 Issue #9745 remains open, with a new AI Factory sandbox run started at 19:31:47. Waiting for the PR to be submitted.
