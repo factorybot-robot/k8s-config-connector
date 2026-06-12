@@ -3,7 +3,7 @@
 This journal tracks the migration of `ComputeSSLPolicy` to a direct controller at `v1beta1`.
 
 ## Current Step
-Step 1: Direct API Types - Approved & Queued for Merge
+Step 1: Direct API Types - Rebase Required
 
 ## Migration Progress
 
