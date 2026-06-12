@@ -6,12 +6,13 @@ Step 1: Direct API Types
 ## Progress Tracking
 | Step Number and Name | GitHub Issue | GitHub Pull Request | Status | Date Started | Date Completed |
 | --- | --- | --- | --- | --- | --- |
-| Step 1: Direct API Types | [#9730](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9730) | [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732) | Merge Conflict (Rebase Required) | 2026-06-12 | - |
+| Step 1: Direct API Types | [#9730](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9730) | [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732) | CI Failed (Transient Infrastructure Flake) | 2026-06-12 | - |
 | Step 2: Identity and Reference Types Pattern | - | - | - | - | - |
 | Step 3: Create a Round-Trip KRM Fuzzer | - | - | - | - | - |
 | Step 4: Implement Direct Controller & E2E Fixtures | - | - | - | - | - |
 
 ## Status Updates
+- **2026-06-12**: Monitored Step 1 PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Detected that the `tests-preview` check-run failed due to a transient network flake (CURLE_HTTP2_STREAM_ERROR). Posted a comment requesting a minor push/rerun of the failed job and reassigned the PR to `factorybot-robot`.
 - **2026-06-12**: Monitored Step 1 PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Detected that the PR has merge conflicts with master (mergeable_state is 'dirty'). Posted a comment requesting a rebase on master and reassigned the PR to `factorybot-robot`.
 - **2026-06-12**: Re-verified pull request [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). All 110+ CI checks are 100% green and passing. Attempted to merge the PR, but it requires merge queue permissions and awaits final maintainer review and approval. Step 2 remains pending until Step 1 is merged.
 - **2026-06-12**: Monitored PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732) and confirmed all 150+ CI checks remain 100% green and passing. The PR is mergeable and awaiting final maintainer review and merge before we can proceed to Step 2.
