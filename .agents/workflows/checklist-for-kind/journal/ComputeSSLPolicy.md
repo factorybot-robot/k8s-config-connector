@@ -17,6 +17,7 @@ Step 1: Direct API Types - Rebase Required
 ## Status Update Notes
 
 ### 2026-06-12
+- Monitored PR #9725 and the parent issue #9723 on June 12, 2026. The PR remains approved but blocked from merging since it has not yet been rebased on the latest upstream master (which has progressed to commit `1cdcf7237e`). We confirmed that the worker agent `factorybot-robot` is currently occupied with other tasks, and we continue to wait for the requested rebase to be completed before we can proceed to Step 2.
 - Verified that PR #9725 remains open and in a 'BLOCKED' mergeStateStatus because it has not yet been rebased. It remains MERGEABLE with no git conflicts. Checked master, which has progressed further with new commits up to a89f2fa248. We continue to wait for `factorybot-robot` to perform the requested rebase on the latest upstream master branch before Step 2 can begin.
 - Monitored merge queue progress and identified that both merge queue workflow runs `27392322062` and `27391517383` failed due to an unrelated, flaky infrastructure test timeout in `fields/management/gkehub/featuremembership/set_unset`.
 - Consequently, PR #9725 was kicked out of the merge queue. Although auto-merge was re-enabled by `barney-s`, the PR remains behind the newly merged upstream `master` commit `1cdcf7237e` (#9312) and is not re-queueing automatically.
