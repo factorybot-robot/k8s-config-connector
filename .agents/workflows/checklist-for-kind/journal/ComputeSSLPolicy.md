@@ -3,13 +3,13 @@
 This journal tracks the migration of `ComputeSSLPolicy` to a direct controller at `v1beta1`.
 
 ## Current Step
-Step 1: Direct API Types - In Merge Queue
+Step 1: Direct API Types - Rebase Pending (Conflicting)
 
 ## Migration Progress
 
 | Step | Name | GitHub Issue | GitHub Pull Request | Status | Date Started | Date Completed |
 |------|------|--------------|---------------------|--------|--------------|----------------|
-| 1 | Direct API Types | [#9724](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9724) | [#9725](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9725) | In Merge Queue | 2026-06-11 | - |
+| 1 | Direct API Types | [#9724](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9724) | [#9725](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9725) | Rebase Pending (Conflicting) | 2026-06-11 | - |
 | 2 | Identity and Reference Types Pattern | - | - | Pending | - | - |
 | 3 | Create a Round-Trip KRM Fuzzer | - | - | Pending | - | - |
 | 4 | Implement Direct Controller & E2E Fixtures | - | - | Pending | - | - |
@@ -17,6 +17,7 @@ Step 1: Direct API Types - In Merge Queue
 ## Status Update Notes
 
 ### 2026-06-12
+- Checked the status of PR #9725 on Friday, June 12, 2026. Verified that all 21 core CI check-runs for the head commit have passed with 100% success (0 failures). However, subsequent commits on upstream `master` have caused a merge conflict, changing the PR's mergeability state to `CONFLICTING`. Commented on the PR requesting `factorybot-robot` to perform a rebase to resolve the conflicts and trigger a fresh green CI run, and reassigned the PR back to them.
 - Monitored PR #9725 on Friday, June 12, 2026. Verified that the PR has been successfully rebased on the latest upstream master by `factorybot-robot`. The PR is fully approved with LGTM/approve from owners, with no merge conflicts. All completed CI checks are passing successfully with 0 failures, and the remaining integration checks are currently progressing cleanly in the native merge queue. We continue to wait for the merge queue to complete and merge PR #9725 into upstream master before starting Step 2.
 - Checked the status of PR #9725 on Friday, June 12, 2026. Verified that the PR remains open, approved, and blocked from merging (`mergeable_state: blocked`) since upstream `master` has progressed to `8d9bb95599`. The worker agent `factorybot-robot` is assigned and starting the investigation/rebase task to update the branch and resolve the stale state. We continue to wait for the rebase to complete so that PR checks can pass cleanly and enable the merge.
 - Monitored PR #9725 on Friday, June 12, 2026. Confirmed that the PR remains open and approved but blocked from merging (`mergeable_state: blocked`) as a rebase on the latest upstream master is still pending from the worker agent `factorybot-robot`. Upstream master has now progressed further with commits up to `f1b66c1b9a` (including round-trip fuzzers for ComputeSubnetwork, DNSRecordSet, and StorageBucket, as well as moving PubSubSubscription to the identity and refs pattern). We verified that all active CI checks on the head commit (`e9ab8142fe`) are fully green and passing with 0 failures. We continue to wait for `factorybot-robot` to complete the rebase and re-enqueue the PR.
