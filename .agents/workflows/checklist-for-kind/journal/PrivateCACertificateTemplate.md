@@ -16,3 +16,4 @@ Current Step: **Step 1: Direct API Types**
 ### 2026-06-12
 - Initiated the migration journal for `PrivateCACertificateTemplate`.
 - Created GitHub Issue #9788 for Step 1: Direct API Types, assigned to `factorybot-robot`.
+- Monitored progress: Issue #9788 is currently being resolved by `factorybot-robot` in a sandbox, and we are awaiting the generation of the corresponding pull request.
