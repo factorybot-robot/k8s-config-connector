@@ -1,10 +1,10 @@
 # Migration Journal: ComputeHTTPHealthCheck
 
-**Current Step:** `Step 1: Direct API Types` (PR Created, Rebase Requested)
+**Current Step:** `Step 1: Direct API Types` (PR Created, CI Pending)
 
 | Step | Step Name | GitHub Issue | GitHub Pull Request | Status | Date Started | Date Completed |
 |---|---|---|---|---|---|---|
-| 1 | Direct API Types | [#7480](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/7480) | [#9676](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9676) | Rebase Requested | 2026-06-10 | - |
+| 1 | Direct API Types | [#7480](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/7480) | [#9676](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9676) | PR Created | 2026-06-10 | - |
 | 2 | Identity & Reference Pattern | - | - | Pending | - | - |
 | 3 | Round-Trip KRM Fuzzer | - | - | Pending | - | - |
 | 4 | Direct Controller & E2E Fixtures | - | - | Pending | - | - |
@@ -102,3 +102,4 @@
 - **2026-06-12 (Orchestrator Run):** Active orchestration confirmed PR #9676 is OPEN, fully mergeable, conflict-free, and all 30/30 CI check-runs are completely green and passing successfully (100% green). We are continuing to monitor the PR and will proceed with Step 2 (Identity & Reference Pattern) immediately once it is merged by the maintainers.
 - **2026-06-12 (Orchestrator Status Check):** Conducted an active status verification at 18:53 UTC. Confirmed that PR #9676 is still open and has all 30/30 CI check-runs passing successfully (100% green). Standing by for final maintainer review and merge before starting Step 2.
 - **2026-06-12 (Merge Conflict & Rebase Requested):** Active monitoring detected that PR #9676 is currently in a conflicting state (`mergeable: CONFLICTING`) due to other commits merged into `master`. Posted a comment on the PR requesting a rebase on `master` and assigned back to `factorybot-robot`.
+- **2026-06-12 (Rebase Completed & CI Running):** Confirmed that `factorybot-robot` successfully rebased PR #9676 on `master`. The PR is now conflict-free (`mergeable: MERGEABLE`) and CI checks are running. Continuing to monitor.
