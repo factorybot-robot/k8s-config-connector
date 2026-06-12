@@ -12,4 +12,5 @@ Step 1: Direct API Types
 | 4. Implement Direct Controller & E2E Fixtures | | | Pending | | |
 
 ## Status Updates
+* **2026-06-12**: Monitored Step 1 progress. Issue #9735 remains open; waiting for the AI Factory sandbox to generate and submit the pull request.
 * **2026-06-12**: Initialized migration checklist. Created Step 1 issue #9735 to scaffold direct API types and configure `generate.sh` for `ComputeInstance`.
