@@ -12,6 +12,7 @@ Step 1: Direct API Types
 | Step 4: Implement Direct Controller & E2E Fixtures | - | - | - | - | - |
 
 ## Status Updates
+- **2026-06-12**: Re-verified CI check status on PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Confirmed that all completed check-runs are passing with zero failures. A few shard-specific e2e fixture runs remain pending. Awaiting final review and merge of Step 1.
 - **2026-06-12**: Verified that all critical CI check failures (including `validate-generated-files`, `fuzz-roundtrippers`, and `unit-tests`) on PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732) have been successfully resolved by `factorybot-robot`. All checks are passing successfully. Awaiting maintainer approval and merge of Step 1.
 - **2026-06-12**: Monitored PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Identified two CI failures (`validate-generated-files` and `fuzz-roundtrippers`). Left feedback on the PR outlining how to regenerate docs via `make resource-docs` and how to fix the fuzzer error by adding `f.Unimplemented_NotYetTriaged(".ip_collection")` to `pkg/controller/direct/compute/computeaddress_fuzzer.go`. Reassigned back to `factorybot-robot`.
 - **2026-06-12**: Initialized migration journal for `ComputeAddress`. Opened Step 1 issue #9730 for direct API types and assigned to `factorybot-robot`.
