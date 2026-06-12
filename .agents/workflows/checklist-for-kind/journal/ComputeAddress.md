@@ -6,12 +6,13 @@ Step 1: Direct API Types
 ## Progress Tracking
 | Step Number and Name | GitHub Issue | GitHub Pull Request | Status | Date Started | Date Completed |
 | --- | --- | --- | --- | --- | --- |
-| Step 1: Direct API Types | [#9730](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9730) | [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732) | CI Failed (Transient Infrastructure Flake) | 2026-06-12 | - |
+| Step 1: Direct API Types | [#9730](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9730) | [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732) | CI Failed (validate-generated-files) | 2026-06-12 | - |
 | Step 2: Identity and Reference Types Pattern | - | - | - | - | - |
 | Step 3: Create a Round-Trip KRM Fuzzer | - | - | - | - | - |
 | Step 4: Implement Direct Controller & E2E Fixtures | - | - | - | - | - |
 
 ## Status Updates
+- **2026-06-12**: Monitored PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Confirmed that the transient flake on `tests-preview` has been resolved, but the `validate-generated-files` check failed. Reassigned the PR to `factorybot-robot` to fix the generated files and regenerate as needed.
 - **2026-06-12**: Monitored PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Confirmed that the `tests-preview` check-run is still failing due to a transient network flake (CURLE_HTTP2_STREAM_ERROR). All other active checks are currently running or pending, and we are awaiting a minor push or rerun from the developer bot (`factorybot-robot`) to re-trigger the failed check.
 - **2026-06-12**: Monitored Step 1 PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Detected that the `tests-preview` check-run failed due to a transient network flake (CURLE_HTTP2_STREAM_ERROR). Posted a comment requesting a minor push/rerun of the failed job and reassigned the PR to `factorybot-robot`.
 - **2026-06-12**: Monitored Step 1 PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Detected that the PR has merge conflicts with master (mergeable_state is 'dirty'). Posted a comment requesting a rebase on master and reassigned the PR to `factorybot-robot`.
