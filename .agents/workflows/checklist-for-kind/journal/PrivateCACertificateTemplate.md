@@ -6,7 +6,7 @@ Current Step: **Step 1: Direct API Types**
 
 | Step Number & Name | GitHub Issue | GitHub Pull Request | Status | Date Started | Date Completed |
 |---|---|---|---|---|---|
-| Step 1: Direct API Types | [#9788](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9788) | - | Open | 2026-06-12 | - |
+| Step 1: Direct API Types | [#9788](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9788) | [#9797](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9797) | PR Created | 2026-06-12 | - |
 | Step 2: Identity and Reference Types Pattern | - | - | Pending | - | - |
 | Step 3: Create a Round-Trip KRM Fuzzer | - | - | Pending | - | - |
 | Step 4: Implement Direct Controller & E2E Fixtures | - | - | Pending | - | - |
@@ -16,4 +16,7 @@ Current Step: **Step 1: Direct API Types**
 ### 2026-06-12
 - Initiated the migration journal for `PrivateCACertificateTemplate`.
 - Created GitHub Issue #9788 for Step 1: Direct API Types, assigned to `factorybot-robot`.
-- Monitored progress: Issue #9788 is currently being resolved by `factorybot-robot` in a sandbox. A restarted sandbox run began at 20:06:56 UTC, and we are actively waiting for the generation of the corresponding pull request.
+- Monitored progress: Issue #9788 is currently being resolved by `factorybot-robot` in a sandbox. A restarted sandbox run began at 20:06:56 UTC.
+- Pull Request [#9797](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9797) has been successfully generated for Step 1.
+- Identified failing CI checks (`unit-tests`, `validate-generated-files`, `validations`) on PR #9797.
+- Assigned PR #9797 to `factorybot-robot` to trigger automated correction. Waiting for CI checks to pass and PR to be merged.
