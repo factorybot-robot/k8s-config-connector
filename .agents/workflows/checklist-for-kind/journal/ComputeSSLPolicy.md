@@ -22,6 +22,7 @@ Step 1: Direct API Types - Approved & Queued for Merge
 - Verified that `factorybot-robot` ran `make resource-docs` and committed/pushed the updated documentation in commit `1dc8ae1ef475ae80798dab61b6443910ef4e23d0`. All core CI checks are in a fully green state.
 - Re-verified that the PR remains healthy and is actively in the merge queue (behind PR #9720) with no blocks, and we are continuing to monitor it until it merges.
 - Confirmed that the GitHub Actions Presubmit run for the blocking PR #9720 is actively running and making progress. PR #9725 remains cleanly approved, fully green, and queued directly behind #9720 in the merge queue.
+- Monitored merge queue progress for PR #9725. Verified that the PR is currently inside the GitHub Actions native merge queue on the merge commit `4caf565444`. 17 core test suites have successfully completed on this merge commit with 0 failures, and the remaining tests are healthy and progressing. We are waiting for the merge queue to complete and merge PR #9725 into upstream `master` before starting Step 2.
 
 ### 2026-06-11
 - Initialized the ComputeSSLPolicy migration journal.
