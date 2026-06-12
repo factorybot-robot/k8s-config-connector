@@ -1,6 +1,6 @@
 # Migration Journal: ComputeHTTPHealthCheck
 
-**Current Step:** `Step 1: Direct API Types` (PR Created, CI Pending)
+**Current Step:** `Step 1: Direct API Types` (PR Created, CI Passing)
 
 | Step | Step Name | GitHub Issue | GitHub Pull Request | Status | Date Started | Date Completed |
 |---|---|---|---|---|---|---|
@@ -104,3 +104,4 @@
 - **2026-06-12 (Merge Conflict & Rebase Requested):** Active monitoring detected that PR #9676 is currently in a conflicting state (`mergeable: CONFLICTING`) due to other commits merged into `master`. Posted a comment on the PR requesting a rebase on `master` and assigned back to `factorybot-robot`.
 - **2026-06-12 (Rebase Completed & CI Running):** Confirmed that `factorybot-robot` successfully rebased PR #9676 on `master`. The PR is now conflict-free (`mergeable: MERGEABLE`) and CI checks are running. Continuing to monitor.
 - **2026-06-12 (Active Monitoring):** PR #9676 remains open and conflict-free with 100% of the completed CI checks passing. A few remaining E2E fixtures checks are in-progress following the recent rebase on `master`. Standing by to proceed with Step 2 (Identity & Reference Pattern) once the PR is merged by the maintainers.
+- **2026-06-12 (Re-review Requested):** Verified that all 30/30 CI checks have successfully completed and are 100% green on PR #9676. Confirmed that the review decision is `REVIEW_REQUIRED` because the previous approval from `@barney-s` was dismissed after the branch rebase. Posted a friendly update comment on the PR requesting `@barney-s` to re-approve the PR.
