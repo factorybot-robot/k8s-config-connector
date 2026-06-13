@@ -3,13 +3,13 @@
 This journal tracks the migration of `ComputeSSLPolicy` to a direct controller at `v1beta1`.
 
 ## Current Step
-Step 1: Direct API Types - In Progress (Approval / Merge Pending)
+Step 1: Direct API Types - In Progress (CI Pending)
 
 ## Migration Progress
 
 | Step | Name | GitHub Issue | GitHub Pull Request | Status | Date Started | Date Completed |
 |------|------|--------------|---------------------|--------|--------------|----------------|
-| 1 | Direct API Types | [#9724](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9724) | [#9725](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9725) | In Progress (Approval / Merge Pending) | 2026-06-11 | - |
+| 1 | Direct API Types | [#9724](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9724) | [#9725](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9725) | In Progress (CI Pending) | 2026-06-11 | - |
 | 2 | Identity and Reference Types Pattern | - | - | Pending | - | - |
 | 3 | Create a Round-Trip KRM Fuzzer | - | - | Pending | - | - |
 | 4 | Implement Direct Controller & E2E Fixtures | - | - | Pending | - | - |
@@ -17,6 +17,7 @@ Step 1: Direct API Types - In Progress (Approval / Merge Pending)
 ## Status Update Notes
 
 ### 2026-06-13
+- Monitored PR #9725 on Saturday, June 13, 2026. Verified that a new commit `97c3e2a4ecf84e72dfcf23d1a9bb25fbd748b153` is active on the PR branch, with a new suite of CI check-runs currently queued/in_progress. The PR remains open, healthy, and fully mergeable, and we continue to wait for all CI check-runs to complete and for the PR to be merged into upstream master before proceeding to Step 2.
 - Monitored PR #9725 on Saturday, June 13, 2026. Identified that the `crd-equivalence-check` check-run failed because upstream master was updated with `storagebuckets` changes that are not present in the outdated branch of PR #9725. Assigned the PR to `factorybot-robot` to signal the watch daemon to perform a rebase, and cleared the maintainer assignees to avoid unnecessary noise for them. We continue to wait for the rebase to complete and for the PR to be merged.
 - Monitored PR #9725 on Saturday, June 13, 2026. Verified the status of the new CI check-run suite associated with commit `31528e1c38` (workflow run `27454262060`). Core validations, CLA, and linter check-runs (such as `validate-untested-fields`, `license-lint`, and `cla/google`) have already passed successfully. The remaining extensive integration test shards and mockgcp checks are currently `in_progress` and running cleanly. The PR remains open, healthy, and fully mergeable, waiting for all CI checks to complete and for maintainer approvals to be re-applied. We will proceed to Step 2 once the PR merges.
 - Monitored PR #9725 on Saturday, June 13, 2026. A new CI check-run suite associated with run `27454262060` has been kicked off for the head commit `31528e1c38` and the checks are currently pending. The PR remains open and fully mergeable, waiting for checks to complete and for maintainer approvals to be re-applied. We will proceed to Step 2 (Identity and Reference Types Pattern) once the PR has merged.
