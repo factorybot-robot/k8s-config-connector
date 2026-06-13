@@ -489,6 +489,40 @@ func ComputeForwardingRuleStatus_v1beta1_ToProto(mapCtx *direct.MapContext, in *
 }
 */
 
+/* found existing non-generated mapping function "ComputeGlobalNetworkEndpointSpec_v1alpha1_FromProto", skipping
+func ComputeGlobalNetworkEndpointSpec_v1alpha1_FromProto(mapCtx *direct.MapContext, in *pb.NetworkEndpoint) *krmcomputev1alpha1.ComputeGlobalNetworkEndpointSpec {
+	if in == nil {
+		return nil
+	}
+	out := &krmcomputev1alpha1.ComputeGlobalNetworkEndpointSpec{}
+	// MISSING: Annotations
+	// MISSING: ClientDestinationPort
+	out.FQDN = in.Fqdn
+	// MISSING: Instance
+	out.IPAddress = in.IpAddress
+	// MISSING: IPV6Address
+	// MISSING: Port
+	return out
+}
+*/
+
+/* found existing non-generated mapping function "ComputeGlobalNetworkEndpointSpec_v1alpha1_ToProto", skipping
+func ComputeGlobalNetworkEndpointSpec_v1alpha1_ToProto(mapCtx *direct.MapContext, in *krmcomputev1alpha1.ComputeGlobalNetworkEndpointSpec) *pb.NetworkEndpoint {
+	if in == nil {
+		return nil
+	}
+	out := &pb.NetworkEndpoint{}
+	// MISSING: Annotations
+	// MISSING: ClientDestinationPort
+	out.Fqdn = in.FQDN
+	// MISSING: Instance
+	out.IpAddress = in.IPAddress
+	// MISSING: IPV6Address
+	// MISSING: Port
+	return out
+}
+*/
+
 /* found existing non-generated mapping function "ComputeHealthCheckSpec_v1beta1_FromProto", skipping
 func ComputeHealthCheckSpec_v1beta1_FromProto(mapCtx *direct.MapContext, in *pb.HealthCheck) *krm.ComputeHealthCheckSpec {
 	if in == nil {
