@@ -16,6 +16,9 @@ Step 1: Direct API Types - In Progress (Approval / Merge Pending)
 
 ## Status Update Notes
 
+### 2026-06-13
+- Monitored PR #9725 on Saturday, June 13, 2026. All 150+ presubmit CI checks under the latest check suite (`73828446387`) completed successfully with 100% success (0 failures). The PR remains open, fully mergeable, and free of git conflicts. It is currently in a blocked state under the `REVIEW_REQUIRED` state because previous approvals were dismissed following the rebase on upstream master. We are waiting for owners `@barney-s` and `@maqiuyujoyce` to re-approve and merge PR #9725 before proceeding to Step 2 (Identity and Reference Types Pattern).
+
 ### 2026-06-12
 - Checked the status of PR #9725 on Friday, June 12, 2026. Verified that the latest CI workflow run `27440526490` completed successfully with 100% success (0 failures). The PR remains open, fully mergeable, and free of git conflicts. It is currently in a blocked state under the `REVIEW_REQUIRED` state because previous reviews/approvals were dismissed by GitHub following the rebase. We continue to wait for owners `@barney-s` and `@maqiuyujoyce` to re-approve and merge PR #9725 before proceeding to Step 2 (Identity and Reference Types Pattern).
 - Checked the status of PR #9725 on Friday, June 12, 2026. All 150+ presubmit CI checks have successfully completed with 100% success (0 failures) on the rebased branch. Commented on the PR notifying owners `@barney-s` and `@maqiuyujoyce` that checks are green, requesting a re-LGTM/re-approval to trigger the merge. We continue to monitor the PR and wait for it to be merged.
