@@ -418,3 +418,56 @@ func mockFieldValuesForRule(r *pb.FirewallPolicyRule) {
 		r.Description = PtrTo("")
 	}
 }
+
+func (s *FirewallPoliciesV1) GetAssociation(ctx context.Context, req *pb.GetAssociationFirewallPolicyRequest) (*pb.FirewallPolicyAssociation, error) {
+	fqn := "locations/global/firewallPolicies/" + req.GetFirewallPolicy() + "/associations/" + req.GetName()
+
+	obj := &pb.FirewallPolicyAssociation{}
+	if err := s.storage.Get(ctx, fqn, obj); err != nil {
+		return nil, err
+	}
+	return obj, nil
+}
+
+func (s *FirewallPoliciesV1) AddAssociation(ctx context.Context, req *pb.AddAssociationFirewallPolicyRequest) (*pb.Operation, error) {
+	fqn := "locations/global/firewallPolicies/" + req.GetFirewallPolicy() + "/associations/" + req.GetFirewallPolicyAssociationResource().GetName()
+
+	obj := proto.Clone(req.GetFirewallPolicyAssociationResource()).(*pb.FirewallPolicyAssociation)
+
+	if obj.ShortName == nil {
+		obj.ShortName = proto.String(req.GetFirewallPolicyAssociationResource().GetName())
+	}
+
+	if err := s.storage.Create(ctx, fqn, obj); err != nil {
+		return nil, err
+	}
+
+	op := &pb.Operation{
+		TargetId:      PtrTo(uint64(12345)),
+		TargetLink:    PtrTo("https://www.googleapis.com/compute/v1/" + fqn),
+		OperationType: PtrTo("addAssociation"),
+		User:          PtrTo("user@example.com"),
+	}
+	return s.startGlobalOrganizationLRO(ctx, op, func() (proto.Message, error) {
+		return obj, nil
+	})
+}
+
+func (s *FirewallPoliciesV1) RemoveAssociation(ctx context.Context, req *pb.RemoveAssociationFirewallPolicyRequest) (*pb.Operation, error) {
+	fqn := "locations/global/firewallPolicies/" + req.GetFirewallPolicy() + "/associations/" + req.GetName()
+
+	deleted := &pb.FirewallPolicyAssociation{}
+	if err := s.storage.Delete(ctx, fqn, deleted); err != nil {
+		return nil, err
+	}
+
+	op := &pb.Operation{
+		TargetId:      PtrTo(uint64(12345)),
+		TargetLink:    PtrTo("https://www.googleapis.com/compute/v1/" + fqn),
+		OperationType: PtrTo("removeAssociation"),
+		User:          PtrTo("user@example.com"),
+	}
+	return s.startGlobalOrganizationLRO(ctx, op, func() (proto.Message, error) {
+		return deleted, nil
+	})
+}

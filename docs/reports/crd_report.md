@@ -96,7 +96,7 @@
 | contactcenterinsights.cnrm.cloud.google.com   | CCInsightsPhraseMatcher                         | True         | False       | False  | Direct     | True        |
 | contactcenterinsights.cnrm.cloud.google.com   | CCInsightsView                                  | True         | False       | False  | Direct     | True        |
 | certificatemanager.cnrm.cloud.google.com      | CertificateManagerCertificateIssuanceConfig     | True         | False       | False  | Direct     | True        |
-| certificatemanager.cnrm.cloud.google.com      | CertificateManagerCertificateMapEntry           | True         | True        | False  | Terraform  | True        |
+| certificatemanager.cnrm.cloud.google.com      | CertificateManagerCertificateMapEntry           | True         | True        | False  | Terraform  | False       |
 | certificatemanager.cnrm.cloud.google.com      | CertificateManagerCertificateMap                | True         | True        | False  | Terraform  | True        |
 | certificatemanager.cnrm.cloud.google.com      | CertificateManagerCertificate                   | True         | True        | False  | Terraform  | True        |
 | certificatemanager.cnrm.cloud.google.com      | CertificateManagerDNSAuthorization              | True         | True        | False  | Direct     | True        |
@@ -137,7 +137,7 @@
 | compute.cnrm.cloud.google.com                 | ComputeDisk                                     | False        | True        | False  | Terraform  | False       |
 | compute.cnrm.cloud.google.com                 | ComputeExternalVPNGateway                       | False        | True        | False  | Terraform  | False       |
 | compute.cnrm.cloud.google.com                 | ComputeFirewallPolicy                           | False        | True        | False  | DCL        | False       |
-| compute.cnrm.cloud.google.com                 | ComputeFirewallPolicyAssociation                | False        | True        | False  | DCL        | False       |
+| compute.cnrm.cloud.google.com                 | ComputeFirewallPolicyAssociation                | False        | True        | False  | DCL        | True        |
 | compute.cnrm.cloud.google.com                 | ComputeFirewallPolicyRule                       | False        | True        | False  | Direct     | True        |
 | compute.cnrm.cloud.google.com                 | ComputeFirewall                                 | False        | True        | False  | Terraform  | False       |
 | compute.cnrm.cloud.google.com                 | ComputeForwardingRule                           | False        | True        | False  | Terraform  | True        |
