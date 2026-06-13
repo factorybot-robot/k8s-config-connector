@@ -12,6 +12,7 @@ Step 1: Direct API Types
 | Step 4: Implement Direct Controller & E2E Fixtures | - | - | - | - | - |
 
 ## Status Updates
+- **2026-06-13**: Monitored Step 1 PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Confirmed that `validate-generated-files` failed. Assigned the PR to `factorybot-robot` to resolve the generated files issue.
 - **2026-06-12**: Monitored Step 1 PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Confirmed that the `validate-generated-files` check is still failing, while several E2E fixture check-runs are currently in-progress/pending. The PR remains assigned to `factorybot-robot` for resolution.
 - **2026-06-12**: Monitored PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Confirmed that the transient flake on `tests-preview` has been resolved, but the `validate-generated-files` check failed. Reassigned the PR to `factorybot-robot` to fix the generated files and regenerate as needed.
 - **2026-06-12**: Monitored PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Confirmed that the `tests-preview` check-run is still failing due to a transient network flake (CURLE_HTTP2_STREAM_ERROR). All other active checks are currently running or pending, and we are awaiting a minor push or rerun from the developer bot (`factorybot-robot`) to re-trigger the failed check.
