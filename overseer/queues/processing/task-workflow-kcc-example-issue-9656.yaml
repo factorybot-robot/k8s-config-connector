@@ -1,0 +1,10 @@
+type: agent-chore
+url: https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9656
+number: 9656
+priority: medium
+phase: 4
+createdAt: 2026-06-10T14:54:20Z
+assignee: factorybot-robot
+status: Running
+agentFile: https://raw.githubusercontent.com/gke-labs/gemini-for-kubernetes-development/dea5b59e90265fb2ea8702023682ed7264066c5b/.agents/workflows/kcc-example.txt
+sessionId: issue-9656

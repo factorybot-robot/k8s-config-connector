@@ -1,0 +1,9 @@
+type: pr-comments
+url: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9797
+number: 9797
+priority: medium
+phase: 2
+createdAt: 2026-06-12T20:28:11Z
+assignee: factorybot-robot
+status: Running
+commitSHA: a9e79bfc0c7895f46a3f68211ce58a3b37709ef1
