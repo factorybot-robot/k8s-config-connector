@@ -12,6 +12,7 @@ Step 1: Direct API Types
 | Step 4: Implement Direct Controller & E2E Fixtures | - | - | - | - | - |
 
 ## Status Updates
+- **2026-06-13**: Re-checked Step 1 PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Confirmed that critical presubmits (`validate-generated-files`, `fuzz-roundtrippers`, `unit-tests`, `golangci-lint`, `test-mockgcp`) have passed cleanly. The E2E sample and fixture tests are currently running and pending completion. The PR remains open and pending merge; we must await successful merge before starting Step 2.
 - **2026-06-13**: Monitored the status of Step 1 PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Verified that all CI checks are running smoothly with no failures; several check-runs (such as `test-mockgcp`, `unit-tests`, and `validate-generated-files`) are currently in progress. The PR remains open and pending merge before the migration can proceed to Step 2.
 - **2026-06-13**: Checked the status of Step 1 PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). The PR remains open and is awaiting merge. CI check-runs are currently pending/in-progress.
 - **2026-06-13**: Re-verified Step 1 PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Confirmed that all CI checks (including `validate-generated-files` and E2E checks) have fully completed with 100% green status and zero failures. The PR is now completely green and is awaiting maintainer review, approval, and merge before Step 2 can begin.
