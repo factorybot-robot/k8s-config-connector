@@ -6,7 +6,7 @@
 
 | Step Number and Name | GitHub Issue | GitHub Pull Request | Status | Date Started | Date Completed |
 |---|---|---|---|---|---|
-| Step 1: Direct API Types | [#9739](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9739) | [#9795](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9795) | PR Created | 2026-06-12 | |
+| Step 1: Direct API Types | [#9739](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9739) | [#9795](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9795), [#9809](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9809) | PR Created | 2026-06-12 | |
 | Step 2: Identity and Reference Types Pattern | | | Pending | | |
 | Step 3: Create a Round-Trip KRM Fuzzer | | | Pending | | |
 | Step 4: Implement Direct Controller & E2E Fixtures | | | Pending | | |
@@ -14,6 +14,7 @@
 ## Status Update Notes
 
 ### 2026-06-13
+- Monitored Step 1 progress: Checked CI check status for the new pull request [#9809](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9809) created by `factorybot-robot`. Confirmed that the new PR was successfully opened and all CI checks are currently queued and pending.
 - Monitored Step 1 progress: Checked CI check status for pull request [#9795](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9795). Found that CI checks (`validate-generated-files`, `unit-tests`, and `validations`) are failing, and the bot previously gave up. Re-assigned the PR to `factorybot-robot` to request automated retry and resolution of CI failures.
 
 ### 2026-06-12
