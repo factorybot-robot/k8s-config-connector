@@ -20,3 +20,9 @@ Current Step: **Step 1: Direct API Types**
 - Pull Request [#9797](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9797) has been successfully generated for Step 1.
 - Identified failing CI checks (`unit-tests`, `validate-generated-files`, `validations`) on PR #9797.
 - Assigned PR #9797 to `factorybot-robot` to trigger automated correction. Waiting for CI checks to pass and PR to be merged.
+
+### 2026-06-13
+- Checked the status of PR [#9797](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9797). The PR is still open and blocked with failing checks (`unit-tests`, `validate-generated-files`, `validations`).
+- Found that the PR was not yet assigned to `factorybot-robot` in the GitHub repository.
+- Successfully assigned PR [#9797](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9797) to `factorybot-robot` to invoke the automated correction watch daemon. Waiting for the checks to be corrected and the PR to be merged.
+
