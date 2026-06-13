@@ -37,7 +37,7 @@
     "dependencies": [
       "Project"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -49,7 +49,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 114,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 7286
   },
   {
     "group": "apigateway",
@@ -170,7 +171,7 @@
       "AccessContextManagerAccessPolicy",
       "IAMServiceAccount"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -182,7 +183,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 42,
-    "downstreamCount": 2
+    "downstreamCount": 2,
+    "trackingIssue": 6814
   },
   {
     "group": "accesscontextmanager",
@@ -196,7 +198,7 @@
     "dependencies": [
       "AccessContextManagerAccessLevel"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -208,7 +210,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 119,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 7343
   },
   {
     "group": "accesscontextmanager",
@@ -220,7 +223,7 @@
       "Terraform"
     ],
     "dependencies": [],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -232,7 +235,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 37,
-    "downstreamCount": 3
+    "downstreamCount": 3,
+    "trackingIssue": 6821
   },
   {
     "group": "accesscontextmanager",
@@ -273,7 +277,7 @@
       "IAMServiceAccount",
       "Project"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -285,7 +289,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "Missing _reference.go",
     "sortOrder": 121,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 8842
   },
   {
     "group": "accesscontextmanager",
@@ -297,7 +302,7 @@
       "Terraform"
     ],
     "dependencies": [],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -309,7 +314,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "Missing _reference.go",
     "sortOrder": 122,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 8812
   },
   {
     "group": "alloydb",
@@ -323,7 +329,7 @@
     "dependencies": [
       "Project"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -333,9 +339,10 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/8987",
     "sortOrder": 123,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 8983
   },
   {
     "group": "alloydb",
@@ -1323,7 +1330,7 @@
     "dependencies": [
       "Project"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -1335,7 +1342,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 159,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 7359
   },
   {
     "group": "bigquery",
@@ -1405,7 +1413,7 @@
     "dependencies": [
       "Project"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -1415,9 +1423,10 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9577",
     "sortOrder": 162,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 10100
   },
   {
     "group": "bigqueryreservation",
@@ -1670,7 +1679,7 @@
     "dependencies": [
       "PubSubTopic"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -1680,9 +1689,10 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9176",
     "sortOrder": 170,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 10101
   },
   {
     "group": "binaryauthorization",
@@ -1696,7 +1706,7 @@
     "dependencies": [
       "Project"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -1708,7 +1718,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 171,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 7022
   },
   {
     "group": "binaryauthorization",
@@ -1722,7 +1733,7 @@
     "dependencies": [
       "Project"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -1734,7 +1745,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 172,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 7054
   },
   {
     "group": "certificatemanager",
@@ -2036,7 +2048,7 @@
       "IAMServiceAccount",
       "Project"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -2046,9 +2058,10 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/8649",
     "sortOrder": 190,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 7061
   },
   {
     "group": "cloudids",
@@ -2300,7 +2313,7 @@
       "ComputeNetwork",
       "ComputeSubnetwork"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -2310,9 +2323,10 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/10024",
     "sortOrder": 48,
-    "downstreamCount": 2
+    "downstreamCount": 2,
+    "trackingIssue": 9730
   },
   {
     "group": "compute",
@@ -2326,7 +2340,7 @@
     "dependencies": [
       "Project"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -2336,9 +2350,10 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/10046",
     "sortOrder": 198,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 10102
   },
   {
     "group": "compute",
@@ -2352,7 +2367,7 @@
     "dependencies": [
       "StorageBucket"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -2362,9 +2377,10 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/10026",
     "sortOrder": 18,
-    "downstreamCount": 7
+    "downstreamCount": 7,
+    "trackingIssue": 8880
   },
   {
     "group": "compute",
@@ -2379,7 +2395,7 @@
       "ComputeBackendBucket",
       "Project"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -2389,9 +2405,10 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/10001",
     "sortOrder": 199,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 10103
   },
   {
     "group": "compute",
@@ -2410,7 +2427,7 @@
       "ComputeNetworkEndpointGroup",
       "ComputeSecurityPolicy"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -2420,9 +2437,10 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/10049",
     "sortOrder": 16,
-    "downstreamCount": 9
+    "downstreamCount": 9,
+    "trackingIssue": 8856
   },
   {
     "group": "compute",
@@ -2437,7 +2455,7 @@
       "ComputeBackendService",
       "Project"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -2447,9 +2465,10 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/10005",
     "sortOrder": 200,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 10104
   },
   {
     "group": "compute",
@@ -2466,7 +2485,7 @@
       "KMSCryptoKey",
       "Project"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -2476,9 +2495,10 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/10045",
     "sortOrder": 456,
-    "downstreamCount": 4
+    "downstreamCount": 4,
+    "trackingIssue": 10105
   },
   {
     "group": "compute",
@@ -2493,7 +2513,7 @@
       "ComputeDisk",
       "Project"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -2503,9 +2523,10 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/10021",
     "sortOrder": 453,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 10106
   },
   {
     "group": "compute",
@@ -2517,7 +2538,7 @@
       "Terraform"
     ],
     "dependencies": [],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -2527,9 +2548,10 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/10032",
     "sortOrder": 201,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 10107
   },
   {
     "group": "compute",
@@ -2543,7 +2565,7 @@
     "dependencies": [
       "ComputeNetwork"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -2553,9 +2575,10 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/10031",
     "sortOrder": 202,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 10108
   },
   {
     "group": "compute",
@@ -2569,7 +2592,7 @@
     "dependencies": [
       "Folder"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -2579,9 +2602,10 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/10064",
     "sortOrder": 30,
-    "downstreamCount": 4
+    "downstreamCount": 4,
+    "trackingIssue": 10109
   },
   {
     "group": "compute",
@@ -2734,7 +2758,7 @@
       "Terraform"
     ],
     "dependencies": [],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -2746,7 +2770,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 13,
-    "downstreamCount": 11
+    "downstreamCount": 11,
+    "trackingIssue": 9656
   },
   {
     "group": "compute",
@@ -2794,7 +2819,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 12,
-    "downstreamCount": 12
+    "downstreamCount": 12,
+    "trackingIssue": 8813
   },
   {
     "group": "compute",
@@ -2839,7 +2865,7 @@
       "IAMServiceAccount",
       "KMSCryptoKey"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -2851,7 +2877,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 31,
-    "downstreamCount": 4
+    "downstreamCount": 4,
+    "trackingIssue": 9745
   },
   {
     "group": "compute",
@@ -2865,7 +2892,7 @@
     "dependencies": [
       "ComputeNetwork"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -2877,7 +2904,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 15,
-    "downstreamCount": 10
+    "downstreamCount": 10,
+    "trackingIssue": 8798
   },
   {
     "group": "compute",
@@ -2949,7 +2977,7 @@
       "IAMServiceAccount",
       "KMSCryptoKey"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -2961,7 +2989,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 19,
-    "downstreamCount": 7
+    "downstreamCount": 7,
+    "trackingIssue": 8966
   },
   {
     "group": "compute",
@@ -3159,7 +3188,7 @@
       "ComputeNetwork",
       "ComputeSubnetwork"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -3171,7 +3200,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 14,
-    "downstreamCount": 11
+    "downstreamCount": 11,
+    "trackingIssue": 7511
   },
   {
     "group": "compute",
@@ -3319,7 +3349,7 @@
       "ComputeNodeTemplate",
       "Project"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -3331,7 +3361,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 220,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 8982
   },
   {
     "group": "compute",
@@ -3343,7 +3374,7 @@
       "Terraform"
     ],
     "dependencies": [],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -3355,7 +3386,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "Missing _reference.go",
     "sortOrder": 81,
-    "downstreamCount": 1
+    "downstreamCount": 1,
+    "trackingIssue": 7176
   },
   {
     "group": "compute",
@@ -3856,7 +3888,7 @@
       "Terraform"
     ],
     "dependencies": [],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -3868,7 +3900,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 33,
-    "downstreamCount": 4
+    "downstreamCount": 4,
+    "trackingIssue": 9724
   },
   {
     "group": "compute",
@@ -3880,7 +3913,7 @@
       "Terraform"
     ],
     "dependencies": [],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -3892,7 +3925,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 10,
-    "downstreamCount": 13
+    "downstreamCount": 13,
+    "trackingIssue": 9785
   },
   {
     "group": "compute",
@@ -4249,7 +4283,7 @@
       "ComputeBackendBucket",
       "ComputeBackendService"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -4261,7 +4295,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 26,
-    "downstreamCount": 5
+    "downstreamCount": 5,
+    "trackingIssue": 9740
   },
   {
     "group": "compute",
@@ -4435,7 +4470,7 @@
       "IAMServiceAccount",
       "KMSCryptoKey"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -4447,7 +4482,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 56,
-    "downstreamCount": 2
+    "downstreamCount": 2,
+    "trackingIssue": 5186
   },
   {
     "group": "container",
@@ -4464,7 +4500,7 @@
       "IAMServiceAccount",
       "KMSCryptoKey"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -4474,9 +4510,10 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9800",
     "sortOrder": 246,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 9393
   },
   {
     "group": "dlp",
@@ -4545,7 +4582,7 @@
       "Project",
       "StorageBucket"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -4557,7 +4594,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 248,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 7047
   },
   {
     "group": "dlp",
@@ -4661,7 +4699,7 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9783",
     "sortOrder": 251,
     "downstreamCount": 0
   },
@@ -4687,7 +4725,7 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9773",
     "sortOrder": 252,
     "downstreamCount": 0
   },
@@ -4953,7 +4991,7 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9420",
     "sortOrder": 259,
     "downstreamCount": 0
   },
@@ -5130,7 +5168,7 @@
     "dependencies": [
       "Project"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -5142,7 +5180,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "Missing _reference.go",
     "sortOrder": 265,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 9383
   },
   {
     "group": "dataproc",
@@ -5190,7 +5229,7 @@
       "Project",
       "StorageBucket"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -5202,7 +5241,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 35,
-    "downstreamCount": 4
+    "downstreamCount": 4,
+    "trackingIssue": 9000
   },
   {
     "group": "dataproc",
@@ -6370,7 +6410,7 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/5570",
     "sortOrder": 307,
     "downstreamCount": 0
   },
@@ -6384,7 +6424,7 @@
       "Terraform"
     ],
     "dependencies": [],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -6394,9 +6434,10 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9495",
     "sortOrder": 1,
-    "downstreamCount": 298
+    "downstreamCount": 298,
+    "trackingIssue": 7374
   },
   {
     "group": "gkebackup",
@@ -6873,7 +6914,7 @@
       "Terraform"
     ],
     "dependencies": [],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -6885,7 +6926,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 7,
-    "downstreamCount": 43
+    "downstreamCount": 43,
+    "trackingIssue": 7421
   },
   {
     "group": "iam",
@@ -7026,7 +7068,7 @@
       "DCL"
     ],
     "dependencies": [],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -7038,7 +7080,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 98,
-    "downstreamCount": 1
+    "downstreamCount": 1,
+    "trackingIssue": 9739
   },
   {
     "group": "iap",
@@ -7115,7 +7158,7 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9421",
     "sortOrder": 327,
     "downstreamCount": 0
   },
@@ -7361,19 +7404,20 @@
     "dependencies": [
       "KMSKeyRing"
     ],
-    "state": "Not Started",
+    "state": "Completed",
     "steps": {
-      "gen-types": false,
-      "identity-reference": false,
-      "mapper-fuzzer": false,
-      "mocks": false,
-      "controller": false,
-      "tests": false
+      "gen-types": true,
+      "identity-reference": true,
+      "mapper-fuzzer": true,
+      "mocks": true,
+      "controller": true,
+      "tests": true
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7377",
     "sortOrder": 5,
-    "downstreamCount": 113
+    "downstreamCount": 113,
+    "trackingIssue": 7389
   },
   {
     "group": "kms",
@@ -7461,19 +7505,20 @@
       "Terraform"
     ],
     "dependencies": [],
-    "state": "Not Started",
+    "state": "Completed",
     "steps": {
-      "gen-types": false,
-      "identity-reference": false,
-      "mapper-fuzzer": false,
-      "mocks": false,
-      "controller": false,
-      "tests": false
+      "gen-types": true,
+      "identity-reference": true,
+      "mapper-fuzzer": true,
+      "mocks": true,
+      "controller": true,
+      "tests": true
     },
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 4,
-    "downstreamCount": 115
+    "downstreamCount": 115,
+    "trackingIssue": 5357
   },
   {
     "group": "kms",
@@ -7562,19 +7607,20 @@
       "Folder",
       "Project"
     ],
-    "state": "Not Started",
+    "state": "Completed",
     "steps": {
-      "gen-types": false,
-      "identity-reference": false,
-      "mapper-fuzzer": false,
-      "mocks": false,
-      "controller": false,
-      "tests": false
+      "gen-types": true,
+      "identity-reference": true,
+      "mapper-fuzzer": true,
+      "mocks": true,
+      "controller": true,
+      "tests": true
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9424",
     "sortOrder": 41,
-    "downstreamCount": 3
+    "downstreamCount": 3,
+    "trackingIssue": 9045
   },
   {
     "group": "logging",
@@ -7923,7 +7969,7 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9692",
     "sortOrder": 100,
     "downstreamCount": 1
   },
@@ -8130,7 +8176,7 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9580",
     "sortOrder": 358,
     "downstreamCount": 0
   },
@@ -8253,7 +8299,7 @@
       "NetworkConnectivityHub",
       "Project"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -8265,7 +8311,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 363,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 7020
   },
   {
     "group": "networkmanagement",
@@ -8492,7 +8539,7 @@
       "Project",
       "Service"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -8504,7 +8551,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 372,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 7028
   },
   {
     "group": "networkservices",
@@ -8998,7 +9046,7 @@
     "dependencies": [
       "Project"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -9010,7 +9058,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 106,
-    "downstreamCount": 1
+    "downstreamCount": 1,
+    "trackingIssue": 9788
   },
   {
     "group": "privilegedaccessmanager",
@@ -9061,9 +9110,10 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/10079",
     "sortOrder": 3,
-    "downstreamCount": 292
+    "downstreamCount": 292,
+    "trackingIssue": 8816
   },
   {
     "group": "pubsublite",
@@ -9155,19 +9205,20 @@
     "dependencies": [
       "Project"
     ],
-    "state": "In Progress",
+    "state": "Completed",
     "steps": {
       "gen-types": true,
       "identity-reference": true,
       "mapper-fuzzer": true,
       "mocks": true,
-      "controller": false,
+      "controller": true,
       "tests": true
     },
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 20,
-    "downstreamCount": 7
+    "downstreamCount": 7,
+    "trackingIssue": 9031
   },
   {
     "group": "pubsub",
@@ -9220,7 +9271,7 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9801",
     "sortOrder": 63,
     "downstreamCount": 2
   },
@@ -9289,7 +9340,7 @@
     "dependencies": [
       "Project"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -9301,7 +9352,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 396,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 7026
   },
   {
     "group": "redis",
@@ -9342,7 +9394,7 @@
     "dependencies": [
       "ComputeNetwork"
     ],
-    "state": "Not Started",
+    "state": "In Progress",
     "steps": {
       "gen-types": false,
       "identity-reference": false,
@@ -9354,7 +9406,8 @@
     "mocksLastRefreshed": "Never",
     "notes": "",
     "sortOrder": 398,
-    "downstreamCount": 0
+    "downstreamCount": 0,
+    "trackingIssue": 6635
   },
   {
     "group": "resourcemanager",
@@ -9569,7 +9622,7 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7148",
     "sortOrder": 405,
     "downstreamCount": 0
   },
@@ -9751,9 +9804,10 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/10057",
     "sortOrder": 11,
-    "downstreamCount": 13
+    "downstreamCount": 13,
+    "trackingIssue": 8819
   },
   {
     "group": "servicedirectory",
@@ -10195,7 +10249,7 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9784",
     "sortOrder": 8,
     "downstreamCount": 37
   },
@@ -10749,7 +10803,7 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9787",
     "sortOrder": 439,
     "downstreamCount": 0
   },
@@ -10777,7 +10831,7 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7994",
     "sortOrder": 440,
     "downstreamCount": 0
   },
@@ -10878,7 +10932,7 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/8422",
     "sortOrder": 444,
     "downstreamCount": 0
   },
@@ -10904,7 +10958,7 @@
       "tests": false
     },
     "mocksLastRefreshed": "Never",
-    "notes": "",
+    "notes": "Community PR: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/8422",
     "sortOrder": 445,
     "downstreamCount": 0
   },
