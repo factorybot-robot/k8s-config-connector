@@ -6,12 +6,13 @@ Step 1: Direct API Types
 ## Progress Tracking
 | Step Number and Name | GitHub Issue | GitHub Pull Request | Status | Date Started | Date Completed |
 | --- | --- | --- | --- | --- | --- |
-| Step 1: Direct API Types | [#9730](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9730) | [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732) | CI Failed (validate-generated-files) | 2026-06-12 | - |
+| Step 1: Direct API Types | [#9730](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/9730) | [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732) | Pending CI | 2026-06-12 | - |
 | Step 2: Identity and Reference Types Pattern | - | - | - | - | - |
 | Step 3: Create a Round-Trip KRM Fuzzer | - | - | - | - | - |
 | Step 4: Implement Direct Controller & E2E Fixtures | - | - | - | - | - |
 
 ## Status Updates
+- **2026-06-13**: Locally regenerated the out-of-date documentation for `ComputeAddress` by running `make resource-docs`. Verified that only `scripts/generate-google3-docs/resource-reference/generated/resource-docs/compute/computeaddress.md` was modified and that all other code/CRD generation checks pass cleanly. Leaving the updated file in the working tree for the automated system to commit and push.
 - **2026-06-13**: Monitored Step 1 PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Confirmed that `validate-generated-files` failed. Assigned the PR to `factorybot-robot` to resolve the generated files issue.
 - **2026-06-12**: Monitored Step 1 PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Confirmed that the `validate-generated-files` check is still failing, while several E2E fixture check-runs are currently in-progress/pending. The PR remains assigned to `factorybot-robot` for resolution.
 - **2026-06-12**: Monitored PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Confirmed that the transient flake on `tests-preview` has been resolved, but the `validate-generated-files` check failed. Reassigned the PR to `factorybot-robot` to fix the generated files and regenerate as needed.
