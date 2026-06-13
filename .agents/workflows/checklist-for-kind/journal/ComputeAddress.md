@@ -12,6 +12,7 @@ Step 1: Direct API Types
 | Step 4: Implement Direct Controller & E2E Fixtures | - | - | - | - | - |
 
 ## Status Updates
+- **2026-06-13**: Monitored Step 1 PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Confirmed that the `build-images` check-run is in progress and all other active checks (including `validate-generated-files`, `fuzz-roundtrippers`, and E2E tests) have been re-triggered and are currently queued/running.
 - **2026-06-13**: Re-assigned Step 1 PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732) to `factorybot-robot` using the GitHub REST API. This will trigger the developer bot to address the `validate-generated-files` check failure on the branch by pushing the regenerated `scripts/generate-google3-docs/resource-reference/generated/resource-docs/compute/computeaddress.md` documentation file.
 - **2026-06-13**: Locally regenerated the out-of-date documentation for `ComputeAddress` by running `make resource-docs`. Verified that only `scripts/generate-google3-docs/resource-reference/generated/resource-docs/compute/computeaddress.md` was modified and that all other code/CRD generation checks pass cleanly. Leaving the updated file in the working tree for the automated system to commit and push.
 - **2026-06-13**: Monitored Step 1 PR [#9732](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9732). Confirmed that `validate-generated-files` failed. Assigned the PR to `factorybot-robot` to resolve the generated files issue.
