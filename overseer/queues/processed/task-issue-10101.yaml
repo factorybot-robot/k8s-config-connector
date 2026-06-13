@@ -1,0 +1,9 @@
+type: issue-fix
+url: https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/10101
+number: 10101
+priority: medium
+phase: 3
+createdAt: 2026-06-13T04:12:36Z
+assignee: factorybot-robot
+status: Failed
+error: exit status 1
