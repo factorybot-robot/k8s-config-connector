@@ -1,0 +1,9 @@
+type: pr-investigate
+url: https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9676
+number: 9676
+priority: medium
+phase: 3
+createdAt: 2026-06-10T19:34:46Z
+assignee: factorybot-robot
+status: Completed
+commitSHA: 70c1d9d4460aafe070ea5a5d42eb856a42b2eadf
